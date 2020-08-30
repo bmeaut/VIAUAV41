@@ -13,22 +13,19 @@
 - [Chapter 9: Type System and Generics](./material/9.md)
 - [Chapter 10: Coroutines](./material/10.md)
 
-## Extras
-
-- [Resources mentioned on the last lecture, 2019-2020 semesters](extras/resources.md) 
-
 ## Requirements
 
-- Test (ZH), 50 pts. (min. 40%)
-    - ~~In the timeslot of the 14th week lecture, **21st of May**, 12:15-13:15, in Moodle.~~
+- Test (ZH), 50 pts (min. 40%)
+    - *Planned* to take place in the timeslot of the 14th week lecture, **10th of December**, 12:15-13:45.
     - [Sample test PDF](./kotlin_zh_sample.pdf)
-    - [Sample test in Moodle](https://edu.vik.bme.hu/mod/quiz/view.php?id=14201)
-    - ~~_There will be one retake of the test, one week after the regular test. 28th of May, 12:15-13:15, in Moodle._~~
+    - _There will be one retake of the test, about one week after the regular test. Details to come later._
 - Homework, 50 pts (min. 40%)
     - [**Homework details and ideas**](./homework.md)
-    - ~~Specification by the 10th of April (end of week 8)~~
-    - ~~Final hand-in by the **22nd of May** (week 14), end of day.~~
-    - ~~_Homework can be handed it with a late fee up until a week late, the 29th of May, until the end of the day._~~
+    - Submissions taken through the [AUT website](https://www.aut.bme.hu/Members/MyResults.aspx)
+    - Specification has to be handed in by the **29th of October** (end of week 8), end of day.
+        - Note that not handing one in by the deadline results in failing the course, as the homework assignment is a required part.
+    - Final hand-in of the homework by the **11th of December** (end of week 14), end of day.
+    - _Homework can be handed it with a late fee up until a week late, the 18th of December, until the end of the day._
 
 Minimum scores for grades (based on the sum of test and homework scores): 
 
@@ -36,3 +33,7 @@ Minimum scores for grades (based on the sum of test and homework scores):
 - 3: 55 pts
 - 4: 70 pts
 - 5: 85 pts
+
+## Extras
+
+- [Resources mentioned on the last lecture, 2019-2020 semesters](extras/resources.md)
