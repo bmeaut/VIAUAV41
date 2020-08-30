@@ -22,9 +22,15 @@ fun main() {
         print("$i ")
     } // 0 1 2 3 4 5 6 7 8 9 10
 
+    println()
 
     for (i in 0 until 10) {
         print("$i ")
     } // 0 1 2 3 4 5 6 7 8 9
 
+    println()
+
+    for (i in 10 downTo 1 step 2) {
+        print("$i ")
+    } // 10 8 6 4 2
 }
