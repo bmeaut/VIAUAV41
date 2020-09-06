@@ -19,6 +19,7 @@
     - *Planned* to take place in the timeslot of the 14th week lecture, **10th of December**, 12:15-13:45.
     - [Sample test PDF](./kotlin_zh_sample.pdf)
     - _There will be one retake of the test, about one week after the regular test. Details to come later._
+    
 - Homework, 50 pts (min. 40%)
     - [**Homework details and ideas**](./homework.md)
     - Submissions taken through the [AUT website](https://www.aut.bme.hu/Members/MyResults.aspx)
@@ -34,6 +35,28 @@ Minimum scores for grades (based on the sum of test and homework scores):
 - 4: 70 pts
 - 5: 85 pts
 
-## Extras
+## Resources
 
-- [Resources mentioned on the last lecture, 2019-2020 semesters](extras/resources.md)
+### Tools
+
+- Java Development Kit (JDK)
+    - JDK8 is recommended and is used by the provided projects, [download it here]( https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
+    - If you know what you're doing, feel free to use newer JDK versions
+- IDE: [IntelliJ IDEA](https://www.jetbrains.com/idea/) is recommended
+    - The Community edition is free for everyone, and supports basic Kotlin projects
+    - The Ultimate edition is free for students, [get a license here](https://www.jetbrains.com/community/education/#students)
+    - [JetBrains Toolbox](https://www.jetbrains.com/toolbox-app/) is an optional, free helper app for managing your JetBrains IDEs and projects 
+
+### Recordings
+
+Current semester:
+
+- [Recordings of lectures from the 2020/21/1 semester](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJkncYRaDt-u0cR4jO8F5H7a)
+
+Older recordings:
+
+- [Recordings of lectures from the 2019/20/2 semester](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJnfmDp_t-PihwG6DtE9L8Vy)
+
+### Extras
+
+- [Resources mentioned on the last lecture, 2019/20 semesters](extras/resources.md)
