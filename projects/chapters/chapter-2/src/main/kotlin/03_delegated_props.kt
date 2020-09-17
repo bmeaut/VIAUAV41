@@ -5,26 +5,26 @@ import kotlin.properties.Delegates
 
 class Constants {
 
-    private var pi_: Double? = null
+    private var _pi: Double? = null
     val pi: Double
         get() {
-            if (pi_ == null) {
+            if (_pi == null) {
                 // Some expensive computation
                 val sum = (1..50_000).sumByDouble { 1.0 / it / it }
-                pi_ = sqrt(sum * 6.0)
+                _pi = sqrt(sum * 6.0)
             }
-            return pi_!!
+            return _pi!!
         }
 
-    private var e_: Double? = null
+    private var _e: Double? = null
     val e: Double
         get() {
-            if (e_ == null) {
+            if (_e == null) {
                 // Again, complex, expensive computation
                 val sum = (0..20).sumByDouble { 1.0 / (1..it).fold(1, { a, x -> a * x }) }
-                e_ = sum
+                _e = sum
             }
-            return e_!!
+            return _e!!
         }
 
 }
