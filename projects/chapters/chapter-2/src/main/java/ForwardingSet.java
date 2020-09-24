@@ -2,6 +2,8 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.Set;
 
+@SuppressWarnings("ALL")
+
 //@formatter:off
 
 public class ForwardingSet<E> implements Set<E> {
