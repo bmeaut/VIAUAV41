@@ -10,7 +10,7 @@ class Queue(val length: Int) {
 
 
 abstract class Validator {
-    abstract fun String.isValid(): Boolean
+    protected abstract fun String.isValid(): Boolean
 
     fun validate(str: String?): Boolean {
         return str != null && str.isValid()
