@@ -17,15 +17,16 @@
 
 - Test (ZH), 50 pts (min. 40%)
     - *Planned* to take place in the timeslot of the 14th week lecture, **10th of December**, 12:15-13:45.
+    - Will likely be on Moodle.
     - [Sample test PDF](./kotlin_zh_sample.pdf)
     - _There will be one retake of the test, about one week after the regular test. Details to come later._
-    
+
 - Homework, 50 pts (min. 40%)
     - [**Homework details and ideas**](./homework.md)
     - Submissions taken through the [AUT website](https://www.aut.bme.hu/Members/MyResults.aspx)
-    - Specification has to be handed in by the **29th of October** (end of week 8), end of day.
+    - Specification has to be handed in by the **30th of October** (the Friday of week 8), end of day.
         - Note that not handing one in by the deadline results in failing the course, as the homework assignment is a required part.
-    - Final hand-in of the homework by the **11th of December** (end of week 14), end of day.
+    - Final hand-in of the homework by the **11th of December** (the Friday of week 14), end of day.
     - _Homework can be handed it with a late fee up until a week late, the 18th of December, until the end of the day._
 
 Minimum scores for grades (based on the sum of test and homework scores): 
