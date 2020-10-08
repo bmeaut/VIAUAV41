@@ -17,13 +17,13 @@ We don't expect large, complex applications to be implemented for this subject. 
 
 Tests are not generally required. For example, you are not expected to test GUI applications or web applications - but if you add tests, it's still appreciated. However, tests are required if you implement something very simple, such as the first idea below.
 
+The specifications can be uploaded on [Moodle](https://edu.vik.bme.hu/course/view.php?id=4745).
+
 Some of the starter projects in this repository might be useful for getting started, depending on the type of application you choose:
 
 - [Pure Kotlin Gradle project](projects/starters/kotlin-gradle-starter), for command line apps
 - [JavaFX game project](projects/starters/javafx-game-starter), for simple games, with rendering and input handling
 - [TornadoFX project](projects/starters/tornadofx-starter), for TornadoFX-powered desktop UI applications
-
-The specifications can be uploaded on the [AUT dept site, under "My results"](https://www.aut.bme.hu/Members/MyResults.aspx).
 
 ## Hand-in
 
