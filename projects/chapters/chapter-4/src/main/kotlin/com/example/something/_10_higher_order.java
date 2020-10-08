@@ -16,6 +16,4 @@ public class _10_higher_order {
         });
     }
 
-    ;
-
 }
