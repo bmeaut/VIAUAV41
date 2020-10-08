@@ -21,6 +21,16 @@ fun `example of map`() {
 }
 
 fun `example of flatMap`() {
+    val words = listOf("hello", "there")
+
+    val result = words.flatMap { word ->
+        word.toList() // returns a List<Char>
+    }
+
+    println(result) // [h, e, l, l, o, t, h, e, r, e]
+}
+
+fun `old example of flatMap`() {
     val ints = listOf(1, 2, 3)
 
     val result = ints.flatMap {
