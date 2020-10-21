@@ -19,7 +19,7 @@ println(result) // kotlin.Unit
 fun register(
     username: String,
     password: String = "12345678",
-    email: String = ""
+    email: String = "",
 ) {
     // Pretend that there's something useful here.
     println("register: $username; $password; $email")
