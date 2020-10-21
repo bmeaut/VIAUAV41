@@ -1,23 +1,21 @@
 # Homework
 
-## Technical information
+## Specification requirements
 
-Specification requirements:
+The first assignment to complete in the semester is a specification of your homework project. Note that not handing in a specification in by the deadline results in failing the course, as the homework assignment is a required part.
 
-- It should be an easy to open and presentable file containing what you've chosen as your assignment. Good formats: pdf, markdown*, txt. Bad formats: docx, png, exe.
-- The specification can be high level. 3-10 sentences clearly describing the application that will be built is all that's expected here - keep it simple.
+- It should be an easy to open and presentable file containing what you've chosen as your assignment. Good formats: pdf, txt. Bad formats: docx, png, exe.
+- It can be high level. 3-10 sentences clearly describing the application that will be built is all that's expected here - keep it simple.
 
-_\* The website, unfortunately, won't accept a file with a proper markdown extension, but you can rename it to a txt or zip it to hand it in._ 
-
-You'll find a list of possible homework ideas below. These are here to give you pointers on the kinds of applications you may choose to create. You can choose one of these ideas directly as is, alter these ideas to suit what you feel like building, or come up with anything on your own that's of similar complexity.
-
-**Please note that Android applications may not be chosen as homework assignments, as they are covered in [their own subject](https://www.aut.bme.hu/Course/android)**.
+The specifications can be uploaded on [Moodle](https://edu.vik.bme.hu/course/view.php?id=4745).
 
 We don't expect large, complex applications to be implemented for this subject. We expect simple applications, but they have to be sensible, somewhat practical, and functional (as in operating well, not the [paradigm](https://en.wikipedia.org/wiki/Functional_programming)).
 
+**Please note that Android applications may not be chosen as homework assignments, as they are covered in [their own subject](https://www.aut.bme.hu/Course/android)**.
+
 Tests are not generally required. For example, you are not expected to test GUI applications or web applications - but if you add tests, it's still appreciated. However, tests are required if you implement something very simple, such as the first idea below.
 
-The specifications can be uploaded on [Moodle](https://edu.vik.bme.hu/course/view.php?id=4745).
+## Technical info and project hand-in
 
 Some of the starter projects in this repository might be useful for getting started, depending on the type of application you choose:
 
@@ -25,15 +23,17 @@ Some of the starter projects in this repository might be useful for getting star
 - [JavaFX game project](projects/starters/javafx-game-starter), for simple games, with rendering and input handling
 - [TornadoFX project](projects/starters/tornadofx-starter), for TornadoFX-powered desktop UI applications
 
-## Hand-in
-
-We expect a zip file with the source code of the application created to be uploaded.
+We expect a zip file with the source code of the application created to be uploaded for the final hand-in.
 
 > The easiest way to create a zip file without including unnecessary build artifacts and local files is to use the *File -> Export -> Project to Zip File...* option in IntelliJ IDEA.
+
+Third party dependencies may be used in the project, as long as the project itself still contains meaningful code. Please include these through Maven or Gradle, if possible, so that your project can be built and tested after hand-in.
  
 Documentation is not required, but if starting and testing the project is non-trivial, a short README with instructions would be appreciated.
 
 ## List of ideas
+
+You'll find a list of possible homework ideas below. These are here to give you pointers on the kinds of applications you may choose to create. You can choose one of these ideas directly as is, alter these ideas to suit what you feel like building, or come up with anything on your own that's of similar complexity.
 
 ### Complex number class
 
