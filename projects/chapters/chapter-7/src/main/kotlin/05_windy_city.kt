@@ -16,8 +16,8 @@ class Crime(data: List<String>) {
 }
 
 //private fun String.toLocalDateTime(): LocalDateTime {
-//    val (year, month, day) = this.substringBefore('T').split('-').map { it.toInt() }
-//    val (hour, minute, second) = this.substringAfter('T').split(':').map { it.toInt() }
+//    val (year, month, day) = this.substringBefore('T').split('-').map(String::toInt)
+//    val (hour, minute, second) = this.substringAfter('T').split(':').map(String::toInt)
 //
 //    return LocalDateTime.of(year, month, day, hour, minute, second)
 //}
