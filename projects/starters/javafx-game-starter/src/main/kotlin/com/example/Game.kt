@@ -9,6 +9,7 @@ import javafx.scene.canvas.Canvas
 import javafx.scene.canvas.GraphicsContext
 import javafx.scene.image.Image
 import javafx.scene.input.KeyCode
+import javafx.scene.paint.Color
 import javafx.stage.Stage
 
 class Game : Application() {
@@ -94,7 +95,10 @@ class Game : Application() {
 
         // display crude fps counter
         val elapsedMs = elapsedNanos / 1_000_000
-        graphicsContext.fillText("${1000 / elapsedMs} fps", 10.0, 10.0)
+        if (elapsedMs != 0L) {
+            graphicsContext.fill = Color.WHITE
+            graphicsContext.fillText("${1000 / elapsedMs} fps", 10.0, 10.0)
+        }
     }
 
     private fun updateSunPosition() {
