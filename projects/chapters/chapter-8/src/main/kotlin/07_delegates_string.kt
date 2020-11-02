@@ -1,4 +1,5 @@
 import java.io.File
+import kotlin.properties.PropertyDelegateProvider
 import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
 
@@ -23,20 +24,24 @@ class PersistentString(private val key: String) : ReadWriteProperty<Any?, String
     }
 }
 
-object PersistentStringFactory {
+object PersistentStringFactory
+    : PropertyDelegateProvider<Any?, ReadWriteProperty<Any?, String>> {
     private val keys = mutableSetOf<String>()
 
-    operator fun provideDelegate(
+    override operator fun provideDelegate(
         thisRef: Any?,
-        prop: KProperty<*>
+        property: KProperty<*>
     ): ReadWriteProperty<Any?, String> {
-        require(prop.name !in keys) { "No duplicates allowed in PersistentStrings" }
-        keys += prop.name
-        return PersistentString(prop.name)
+        require(property.name !in keys) { "No duplicates allowed in PersistentStrings" }
+        keys += property.name
+        return PersistentString(property.name)
     }
 }
 
-fun persistentString(): PersistentStringFactory = PersistentStringFactory
+fun persistentString()
+        : PropertyDelegateProvider<Any?, ReadWriteProperty<Any?, String>> {
+    return PersistentStringFactory
+}
 
 fun main() {
     var str by persistentString()
