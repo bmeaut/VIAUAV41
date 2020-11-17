@@ -10,8 +10,9 @@
 - [Chapter 6: Functions, Functions, Functions!](./material/6.md)
 - [Chapter 7: Standard Library Showcase](./material/7.md)
 - [Chapter 8: Operators, Conventions, and Delegates](./material/8.md)
-- [Chapter 9: Type System and Generics](./material/9.md)
-- [Chapter 10: Coroutines](./material/10.md)
+- [Chapter 9: The Type System](./material/9.md)
+- [Chapter 9: Generics](./material/10.md)
+- [Chapter 11: Coroutines](material/11.md)
 
 ## Requirements
 
