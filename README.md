@@ -11,7 +11,7 @@
 - [Chapter 7: Standard Library Showcase](./material/7.md)
 - [Chapter 8: Operators, Conventions, and Delegates](./material/8.md)
 - [Chapter 9: The Type System](./material/9.md)
-- [Chapter 9: Generics](./material/10.md)
+- [Chapter 10: Generics](./material/10.md)
 - [Chapter 11: Coroutines](material/11.md)
 
 ## Requirements
