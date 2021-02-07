@@ -17,7 +17,7 @@ Tests are not generally required. For example, you are not expected to test GUI 
 
 ## Technical info and project hand-in
 
-Some of the starter projects in this repository might be useful for getting started, depending on the type of application you choose:
+The starter projects in this repository might be useful for getting started, depending on the type of application you choose:
 
 - [Pure Kotlin Gradle project](projects/starters/kotlin-gradle-starter), for command line apps (JDK8)
 - [JavaFX game project](projects/starters/javafx-game-starter), for simple games, with rendering and input handling (JDK8)

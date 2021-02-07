@@ -25,11 +25,11 @@
 - Homework, 50 pts (min. 40%)
     - [**Homework details and ideas**](/docs/homework.md)
     - Submissions will be taken on Moodle.
-    - ~Specification has to be handed in by the **2nd of April** (the Friday of week 8), end of day.~
-        - ~Note that not handing one in by the deadline results in failing the course, as the homework assignment is a required part.~
+    - Specification has to be handed in by the **2nd of April** (the Friday of week 8), end of day.
+        - **Note that not handing one in by the deadline results in failing the course, as the homework assignment is a required part.**
     - Final hand-in of the homework by the **14th of May** (the Friday of week 14), end of day.
     - _Homework can be handed it with a late fee up until a week late, the 21st of May, until the end of the day._
-    - Some of the starter projects in this repository might be useful for getting started, depending on the type of application you choose:
+    - The starter projects in this repository might be useful for getting started, depending on the type of application you choose:
       - [Pure Kotlin Gradle project](projects/starters/kotlin-gradle-starter), for command line apps
       - [JavaFX game project](projects/starters/javafx-game-starter), for simple games, with rendering and input handling (JDK8)
         - [JavaFX game project (JDK11)](projects/starters/javafx-game-starter-jdk11), same project as above, for JDK11 installations
