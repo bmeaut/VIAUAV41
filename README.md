@@ -46,7 +46,8 @@ Minimum scores for grades (based on the sum of test and homework scores):
 ### Tools
 
 - Java Development Kit (JDK)
-    - JDK8 is recommended and is used by the provided projects, [download it here]( https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
+    - Oracle JDK8 is recommended and is used by the provided projects, [download it here]( https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
+        - Registration is required for download, but is free
     - If you know what you're doing, feel free to use newer JDK versions
     - **To make sure you're using the correct JDK when running your app, see [JDK settings](/docs/jdk-settings.md)**
 - IDE: [IntelliJ IDEA](https://www.jetbrains.com/idea/) is recommended
