@@ -17,19 +17,18 @@
 ## Requirements
 
 - Test (ZH), 50 pts (min. 40%)
-    - Takes place in the timeslot of the 14th week lecture, **10th of December**, 12:15-13:45, on Moodle.
-    - [Sample test on Moodle](https://edu.vik.bme.hu/mod/quiz/view.php?id=17688)
+    - Takes place in the timeslot of the 14th week lecture, **13th of May**, 12:15-13:45, on Moodle.
     - [Old sample test PDF](./kotlin_zh_sample.pdf)
         - In the format of in-person paper-based tests. Contains valid questions, may be used for preparation, but has a slightly different format than the Moodle test. 
     - _There will be one retake of the test, about one week after the regular test. Details to come later._
 
 - Homework, 50 pts (min. 40%)
     - [**Homework details and ideas**](./homework.md)
-    - Submissions taken on [Moodle](https://edu.vik.bme.hu/course/view.php?id=4745).
-    - ~Specification has to be handed in by the **30th of October** (the Friday of week 8), end of day.~
+    - Submissions will be taken on Moodle.
+    - ~Specification has to be handed in by the **2nd of April** (the Friday of week 8), end of day.~
         - ~Note that not handing one in by the deadline results in failing the course, as the homework assignment is a required part.~
-    - Final hand-in of the homework by the **11th of December** (the Friday of week 14), end of day.
-    - _Homework can be handed it with a late fee up until a week late, the 18th of December, until the end of the day._
+    - Final hand-in of the homework by the **14th of May** (the Friday of week 14), end of day.
+    - _Homework can be handed it with a late fee up until a week late, the 21st of May, until the end of the day._
 
 Minimum scores for grades (based on the sum of test and homework scores): 
 
@@ -54,10 +53,11 @@ Minimum scores for grades (based on the sum of test and homework scores):
 
 Current semester:
 
-- [Recordings of lectures from the 2020/21/1 semester](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJkncYRaDt-u0cR4jO8F5H7a)
+- [Recordings of lectures from the 2020/21/2 semester](https://youtube.com/playlist?list=PLmQ4JcLQsrJmfh8JSMNjQx2CpjIvJVZiv)
 
 Older recordings:
 
+- [Recordings of lectures from the 2020/21/1 semester](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJkncYRaDt-u0cR4jO8F5H7a)
 - [Recordings of lectures from the 2019/20/2 semester](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJnfmDp_t-PihwG6DtE9L8Vy)
 
 ### Extras
