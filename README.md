@@ -31,7 +31,8 @@
     - _Homework can be handed it with a late fee up until a week late, the 21st of May, until the end of the day._
     - Some of the starter projects in this repository might be useful for getting started, depending on the type of application you choose:
       - [Pure Kotlin Gradle project](projects/starters/kotlin-gradle-starter), for command line apps
-      - [JavaFX game project](projects/starters/javafx-game-starter), for simple games, with rendering and input handling
+      - [JavaFX game project](projects/starters/javafx-game-starter), for simple games, with rendering and input handling (JDK8)
+        - [JavaFX game project (JDK11)](projects/starters/javafx-game-starter-jdk11), same project as above, for JDK11 installations
       - [TornadoFX project](projects/starters/tornadofx-starter), for TornadoFX-powered desktop UI applications
 
 Minimum scores for grades (based on the sum of test and homework scores): 

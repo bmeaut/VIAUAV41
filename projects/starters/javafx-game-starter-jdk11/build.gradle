@@ -1,0 +1,31 @@
+plugins {
+    id 'application'
+    id 'org.jetbrains.kotlin.jvm' version '1.4.30'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+group 'hu.bme.aut'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
+    implementation 'junit:junit:4.13'
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = '11'
+}
+compileTestKotlin {
+    kotlinOptions.jvmTarget = '11'
+}
+
+javafx {
+    version = '11.0.2'
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+mainClassName = 'com.example.MainKt'
