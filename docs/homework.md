@@ -19,10 +19,10 @@ Tests are not generally required. For example, you are not expected to test GUI 
 
 The starter projects in this repository might be useful for getting started, depending on the type of application you choose:
 
-- [Pure Kotlin Gradle project](projects/starters/kotlin-gradle-starter), for command line apps (JDK8)
-- [JavaFX game project](projects/starters/javafx-game-starter), for simple games, with rendering and input handling (JDK8)
-    - [JavaFX game project (JDK11)](projects/starters/javafx-game-starter-jdk11), same project as above, for JDK11 installations
-- [TornadoFX project](projects/starters/tornadofx-starter), for TornadoFX-powered desktop UI applications (JDK8)
+- [Pure Kotlin Gradle project](../projects/starters/kotlin-gradle-starter), for command line apps (JDK8)
+- [JavaFX game project](../projects/starters/javafx-game-starter), for simple games, with rendering and input handling (JDK8)
+    - [JavaFX game project (JDK11)](../projects/starters/javafx-game-starter-jdk11), same project as above, for JDK11 installations
+- [TornadoFX project](../projects/starters/tornadofx-starter), for TornadoFX-powered desktop UI applications (JDK8)
 
 We expect a zip file with the source code of the application created to be uploaded for the final hand-in.
 
