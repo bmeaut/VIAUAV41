@@ -7,7 +7,7 @@ class Audi : Car()
 
 interface Garage<T : Car> {
     fun park(car: T)
-    fun take(): T
+    fun take(): T?
 }
 
 fun testGarage(garage: Garage<Car>) {
@@ -20,12 +20,12 @@ fun testGarage(garage: Garage<Car>) {
     garage.park(Car())
 }
 
-class CarGarage: Garage<Car> {
+class CarGarage : Garage<Car> {
     override fun park(car: Car) { TODO() }
     override fun take(): Car { TODO() }
 }
 
-class TeslaGarage: Garage<Tesla> {
+class TeslaGarage : Garage<Tesla> {
     override fun park(car: Tesla) { TODO() }
     override fun take(): Tesla { TODO() }
 }
