@@ -17,7 +17,7 @@ fun main() {
     }
     testHandoff(teslaHandoff)
 
-        val carHandoff = object : HandoffPoint<Car> {
+    val carHandoff = object : HandoffPoint<Car> {
         override fun park(car: Car) { TODO() }
     }
     testHandoff(carHandoff)
