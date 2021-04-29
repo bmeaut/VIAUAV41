@@ -32,5 +32,5 @@ class TeslaGarage : Garage<Tesla> {
 
 fun main() {
     testGarage(CarGarage())
-//    testGarage(teslaGarage)
+//    testGarage(TeslaGarage())
 }
