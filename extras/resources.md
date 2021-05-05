@@ -43,8 +43,12 @@
 
 - Budapest meetup group
 	- https://www.meetup.com/Kotlin-Budapest/
+- Android Budapest meetup
+    - https://www.meetup.com/Android-Budapest/
 - Conference for Kotliners
 	- https://www.conferenceforkotliners.com/
+- YouTube
+    - https://www.youtube.com/channel/UCP7uiEZIqci43m22KDl0sNw
 - KotlinConf
 	- https://kotlinconf.com/
 - Slack
