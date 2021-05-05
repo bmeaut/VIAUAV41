@@ -1,3 +1,5 @@
+import com.squareup.moshi.Moshi
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import javafx.scene.control.TableView
 import retrofit2.Call
 import retrofit2.Retrofit
@@ -19,7 +21,11 @@ val gitHubJobsApi: GitHubJobsApi
     get() {
         val jobs = Retrofit.Builder()
             .baseUrl("https://jobs.github.com/")
-            .addConverterFactory(MoshiConverterFactory.create())
+            .addConverterFactory(MoshiConverterFactory.create(
+                Moshi.Builder()
+                    .addLast(KotlinJsonAdapterFactory())
+                    .build()
+            ))
             .build()
         val api = jobs.create<GitHubJobsApi>()
         return api

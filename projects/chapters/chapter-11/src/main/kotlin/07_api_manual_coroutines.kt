@@ -7,7 +7,7 @@ fun getJobDetailsCoroutines(query: String, tableView: TableView<JobDetails>) {
 
     GlobalScope.launch {
         val jobSummaries = api.search(query)
-        val details = jobSummaries.map {  summary ->
+        val details = jobSummaries.map { summary ->
             api.getDetails(summary.id)
         }
         tableView.setData(details)
