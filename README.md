@@ -17,19 +17,18 @@
 ## Requirements
 
 - Test (ZH), 50 pts (min. 40%)
-    - Takes place in the timeslot of the 14th week lecture, **13th of May**, 12:15-13:45, on Moodle.
-    - [Old sample test PDF](./docs/kotlin_zh_sample.pdf)
-        - In the format of in-person paper-based tests. Contains valid questions, may be used for preparation, but has a slightly different format than the Moodle test. 
+    - Takes place in the timeslot of the 14th week lecture, **9th of December**, 12:15-13:45.
+    - [Old sample test PDF](./docs/kotlin_zh_sample.pdf) 
     - _There will be one retake of the test, about one week after the regular test. Details to come later._
 
 - Homework, 50 pts (min. 40%)
     - [**Homework details and ideas**](/docs/homework.md)
     - Submissions will be taken on Moodle.
-    - Specification has to be handed in by the **2nd of April** (the Friday of week 8), end of day.
+    - Specification has to be handed in by the **29th of October** (the Friday of week 8), end of day.
         - **Note that not handing one in by the deadline results in failing the course, as the homework assignment is a required part.**
-    - Final hand-in of the homework by the **14th of May** (the Friday of week 14), end of day.
+    - Final hand-in of the homework by the **10th of December** (the Friday of week 14), end of day.
     - _Homework can be handed it with a late fee up until a week late, the 21st of May, until the end of the day._
-    - The starter projects in this repository might be useful for getting started, depending on the type of application you choose:
+    - The starter projects in this repository are useful for getting started, depending on the type of application you choose:
       - [Pure Kotlin Gradle project](projects/starters/kotlin-gradle-starter), for command line apps
       - [JavaFX game project](projects/starters/javafx-game-starter), for simple games, with rendering and input handling (JDK8)
         - [JavaFX game project (JDK11)](projects/starters/javafx-game-starter-jdk11), same project as above, for JDK11 (or later) installations
@@ -47,7 +46,7 @@ Minimum scores for grades (based on the sum of test and homework scores):
 ### Tools
 
 - Java Development Kit (JDK)
-    - Oracle JDK8 is recommended and is used by the provided projects, [download it here]( https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
+    - Oracle JDK8 is recommended and is generally used by the provided projects, [download it here]( https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
         - Registration is required for download, but is free
     - If you know what you're doing, feel free to use newer JDK versions
     - **To make sure you're using the correct JDK when running your app, see [JDK settings](/docs/jdk-settings.md)**
@@ -59,14 +58,15 @@ Minimum scores for grades (based on the sum of test and homework scores):
 ### Recordings
 
 Current semester:
-
-- [Recordings of lectures from the 2020/21/2 semester](https://youtube.com/playlist?list=PLmQ4JcLQsrJmfh8JSMNjQx2CpjIvJVZiv)
+- 
+- (Coming soon)
 
 Older recordings:
 
+- [Recordings of lectures from the 2020/21/2 semester](https://youtube.com/playlist?list=PLmQ4JcLQsrJmfh8JSMNjQx2CpjIvJVZiv)
 - [Recordings of lectures from the 2020/21/1 semester](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJkncYRaDt-u0cR4jO8F5H7a)
 - [Recordings of lectures from the 2019/20/2 semester](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJnfmDp_t-PihwG6DtE9L8Vy)
 
 ### Extras
 
-- [Resources mentioned on the last lecture, 2019/20 semesters](extras/resources.md)
+- [Resources mentioned on the last lectures of the semesters](extras/resources.md)
