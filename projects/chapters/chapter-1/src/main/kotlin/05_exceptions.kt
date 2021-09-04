@@ -1,4 +1,6 @@
 //region Helpers
+@file:Suppress("unused", "UNUSED_VARIABLE")
+
 class Customer(val name: String, val balance: Int)
 
 interface Database {

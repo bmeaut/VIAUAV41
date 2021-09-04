@@ -1,4 +1,6 @@
 //region Helpers
+@file:Suppress("UNUSED_VARIABLE")
+
 fun getGrade() = 3
 
 fun calculateRating() = 8

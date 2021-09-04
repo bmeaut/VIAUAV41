@@ -1,4 +1,5 @@
-@Suppress("ConstantConditionIf")
+@file:Suppress("UNUSED_VARIABLE")
+
 fun main() {
 
     //region Helpers
