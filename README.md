@@ -58,7 +58,7 @@ Minimum scores for grades (based on the sum of test and homework scores):
 ### Recordings
 
 Current semester:
-- 
+
 - (Coming soon)
 
 Older recordings:
