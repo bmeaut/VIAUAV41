@@ -59,13 +59,13 @@ Minimum scores for grades (based on the sum of test and homework scores):
 
 Current semester:
 
-- (Coming soon)
+- [Lectures from the 2021/22/1 semester](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJlZeGhWhFDh5kXNRiX4R---)
 
 Older recordings:
 
-- [Recordings of lectures from the 2020/21/2 semester](https://youtube.com/playlist?list=PLmQ4JcLQsrJmfh8JSMNjQx2CpjIvJVZiv)
-- [Recordings of lectures from the 2020/21/1 semester](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJkncYRaDt-u0cR4jO8F5H7a)
-- [Recordings of lectures from the 2019/20/2 semester](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJnfmDp_t-PihwG6DtE9L8Vy)
+- [Lectures from the 2020/21/2 semester](https://youtube.com/playlist?list=PLmQ4JcLQsrJmfh8JSMNjQx2CpjIvJVZiv)
+- [Lectures from the 2020/21/1 semester](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJkncYRaDt-u0cR4jO8F5H7a)
+- [Lectures from the 2019/20/2 semester](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJnfmDp_t-PihwG6DtE9L8Vy)
 
 ### Extras
 
