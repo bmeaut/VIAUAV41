@@ -10,7 +10,7 @@ class Constants {
         get() {
             if (_pi == null) {
                 // Some expensive computation
-                val sum = (1..50_000).sumByDouble { 1.0 / it / it }
+                val sum = (1..50_000).sumOf { 1.0 / it / it }
                 _pi = sqrt(sum * 6.0)
             }
             return _pi!!
@@ -21,7 +21,7 @@ class Constants {
         get() {
             if (_e == null) {
                 // Again, complex, expensive computation
-                val sum = (0..20).sumByDouble { 1.0 / (1..it).fold(1, { a, x -> a * x }) }
+                val sum = (0..20).sumOf { 1.0 / (1..it).fold(1, { a, x -> a * x }) }
                 _e = sum
             }
             return _e!!
@@ -32,7 +32,7 @@ class Constants {
 class DelegatedConstants {
 
     val pi: Double by lazy {
-        val sum = (1..50_000).sumByDouble { 1.0 / it / it }
+        val sum = (1..50_000).sumOf { 1.0 / it / it }
         sqrt(sum * 6.0)
     }
 

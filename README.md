@@ -3,7 +3,7 @@
 ## Chapters
 
 - [Chapter 1: Introduction](./material/1.md)
-- [Chapter 2: Object Oriented Programming](./material/2.md)
+- [Chapter 2: Object-Oriented Programming](./material/2.md)
 - [Chapter 3: Nullability](./material/3.md)
 - [Chapter 4: Functional Programming](./material/4.md)
 - [Chapter 5: Collections](./material/5.md)

@@ -1,5 +1,5 @@
 //region Helpers
-fun getCurrentYear() = 2019 // TODO update this implementation next year
+fun getCurrentYear() = 2021 // TODO update this implementation next year
 //endregion
 
 class Car(val model: String, val year: Int) {
@@ -16,7 +16,7 @@ class Car(val model: String, val year: Int) {
     constructor(
         model: String,
         year: String,
-        mileage: String
+        mileage: String,
     ): this(model, year.toInt()) {
         miles = mileage.toDouble()
     }
@@ -24,7 +24,7 @@ class Car(val model: String, val year: Int) {
     constructor(data: Array<String>) : this(
         model = data[1],
         year = data[3],
-        mileage = data[7]
+        mileage = data[7],
     )
 }
 
@@ -36,7 +36,7 @@ class Car2 {
 
     constructor(
         model: String,
-        year: Int
+        year: Int,
     ) {
         this.model = model
         this.year = year
@@ -46,7 +46,7 @@ class Car2 {
     constructor(
         model: String,
         year: String,
-        mileage: String
+        mileage: String,
     ) : this(model, year.toInt()) {
         miles = mileage.toDouble()
     }
