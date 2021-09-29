@@ -13,4 +13,3 @@ fun String.multiply(times: Int): String {
     }
     return result
 }
-

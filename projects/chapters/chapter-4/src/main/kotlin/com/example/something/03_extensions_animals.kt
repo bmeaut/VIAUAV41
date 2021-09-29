@@ -6,7 +6,7 @@ abstract class Animal {
     }
 }
 
-class Cat() : Animal() {
+class Cat : Animal() {
     override fun identify() {
         println("This is a cat!")
     }
