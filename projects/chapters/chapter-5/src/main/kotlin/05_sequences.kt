@@ -10,7 +10,7 @@ fun main() {
         .first()
     println("Result: $result")
 
-    generateSequence(1, { x -> x * 2 })
+    generateSequence(1) { x -> x * 2 }
         .take(20)
         .forEach(::println)
 }

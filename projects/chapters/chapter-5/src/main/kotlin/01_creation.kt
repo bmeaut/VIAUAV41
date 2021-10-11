@@ -5,9 +5,9 @@ fun main() {
     val list3: List<Any> = listOf(1, "two", 3.0)
 
     val scores = mutableMapOf(
-        "Jim" to 24,
-        "Claire" to 20,
-        "Amanda" to 30
+        "Jim" to 2450,
+        "Claire" to 1050,
+        "Amanda" to 3700
     )
 
     val colours: Array<String> = arrayOf("green", "yellow", "purple")

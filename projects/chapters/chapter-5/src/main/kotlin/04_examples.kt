@@ -1,10 +1,8 @@
 fun `example of forEach`() {
-
     val numbers = listOf(1, 2, 3, 4, 5)
     numbers.forEach {
         println(it)
     }
-
 }
 
 fun `example of map`() {
