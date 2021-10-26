@@ -59,7 +59,7 @@ fun main() {
     println("Top 3 types of crimes")
     crimes.groupingBy { it.type }
         .eachCount()
-        .mapKeys { it.key.toLowerCase().capitalize() } // 1
+        .mapKeys { it.key.lowercase().replaceFirstChar(Char::uppercase) } // 1
         .toList() // 2
         .sortedByDescending { (type, count) -> count } // 3
         .take(3) // 4
@@ -76,6 +76,6 @@ fun main() {
         .forEach { (hour, count) ->
             val hourString = String.format("%2dh", hour)
             val percentage = (count.toDouble() / crimes.size * 100).toInt()
-            println("$hourString ${"X".repeat(percentage)}")
+            println("$hourString ${"X".repeat(percentage * 5)}")
         }
 }
