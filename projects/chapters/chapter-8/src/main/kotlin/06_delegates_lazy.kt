@@ -17,7 +17,7 @@ fun <T> lazy(initializer: () -> T): ReadOnlyProperty<Any?, T> = Lazy(initializer
 
 val pi by lazy {
     println("Computing")
-    sqrt(6 * (1..1_000_000_000).sumByDouble {
+    sqrt(6 * (1..1_000_000_000).sumOf {
         1.toDouble() / it / it
     })
 }
