@@ -14,9 +14,7 @@ interface TvShowsApi {
     fun getShows(@Query("q") query: String): Call<List<ShowResponse>>
 
     @GET("shows/{id}")
-    fun getShowDetails(
-        @Path("id") id: Int,
-    ): Call<ShowDetails>
+    fun getShowDetails(@Path("id") id: Int): Call<ShowDetails>
 }
 
 val tvShowsApi: TvShowsApi
