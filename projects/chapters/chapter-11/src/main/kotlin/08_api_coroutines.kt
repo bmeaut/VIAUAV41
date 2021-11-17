@@ -5,32 +5,32 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 interface CoroutineApi {
-    suspend fun search(query: String): List<JobSummary>
-    suspend fun getDetails(jobId: String): JobDetails
+    suspend fun search(query: String): List<ShowSummary>
+    suspend fun getDetails(id: Int): ShowDetails
 }
 
 class CoroutineApiImpl : CoroutineApi {
     private val blockingApi: BlockingApi = BlockingApiImpl()
 
-    override suspend fun search(query: String): List<JobSummary> {
+    override suspend fun search(query: String): List<ShowSummary> {
         return withContext(Dispatchers.IO) {
             blockingApi.search(query)
         }
     }
 
-    override suspend fun getDetails(jobId: String): JobDetails {
+    override suspend fun getDetails(id: Int): ShowDetails {
         return withContext(Dispatchers.IO) {
-            blockingApi.getDetails(jobId)
+            blockingApi.getDetails(id)
         }
     }
 }
 
-fun getJobDetailsCoroutinesApi(query: String, tableView: TableView<JobDetails>) {
+fun getShowDetailsCoroutinesApi(query: String, tableView: TableView<ShowDetails>) {
     val api: CoroutineApi = CoroutineApiImpl()
 
     GlobalScope.launch(Dispatchers.Main) {
-        val jobSummaries = api.search(query)
-        val details = jobSummaries.map { summary ->
+        val showSummaries = api.search(query)
+        val details = showSummaries.map { summary ->
             api.getDetails(summary.id)
         }
         tableView.setData(details)

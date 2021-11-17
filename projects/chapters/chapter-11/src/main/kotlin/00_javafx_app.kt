@@ -7,48 +7,59 @@ import javafx.scene.layout.HBox
 import javafx.scene.layout.VBox
 import javafx.stage.Stage
 
-data class JobSummary(
-    val id: String,
-    val title: String
+data class ShowResponse(
+    val score: Double,
+    val show: ShowSummary,
 )
 
-data class JobDetails(
-    val id: String,
-    val title: String,
-    val company: String,
-    val location: String,
-    val description: String,
-    val type: String
+data class ShowSummary(
+    val id: Int,
+    val name: String,
+)
+
+data class ShowDetails(
+    val id: Int,
+    val name: String,
+    val status: String,
+    val runtime: Int?,
+    val premiered: String?,
+    val language: String?,
 )
 
 fun main() {
-    Application.launch(JobApp::class.java)
+    Application.launch(ShowsApp::class.java)
 }
 
-class JobApp : Application() {
+class ShowsApp : Application() {
 
-    lateinit var tableView: TableView<JobDetails>
+    lateinit var tableView: TableView<ShowDetails>
     lateinit var textField: TextField
 
     override fun start(primaryStage: Stage) {
         val root = VBox()
         val scene = Scene(root)
         primaryStage.scene = scene
-        primaryStage.title = "GitHub Job Browser"
+        primaryStage.title = "TV Show API Browser"
 
-        tableView = TableView<JobDetails>()
+        tableView = TableView<ShowDetails>()
         tableView.columns.apply {
-            add(TableColumn<JobDetails, String>("ID").apply {
-                cellValueFactory = PropertyValueFactory<JobDetails, String>("id")
+            add(TableColumn<ShowDetails, String>("ID").apply {
+                cellValueFactory = PropertyValueFactory("id")
             })
-            add(TableColumn<JobDetails, String>("Title").apply {
-                cellValueFactory = PropertyValueFactory<JobDetails, String>("title")
+            add(TableColumn<ShowDetails, String>("Title").apply {
+                cellValueFactory = PropertyValueFactory("name")
             })
-            add(TableColumn<JobDetails, String>("Company").apply {
-                cellValueFactory = PropertyValueFactory<JobDetails, String>("company")
+            add(TableColumn<ShowDetails, String>("Status").apply {
+                cellValueFactory = PropertyValueFactory("status")
             })
-            add(TableColumn<JobDetails, String>("Location").apply {
-                cellValueFactory = PropertyValueFactory<JobDetails, String>("location")
+            add(TableColumn<ShowDetails, String>("Premiered").apply {
+                cellValueFactory = PropertyValueFactory("premiered")
+            })
+            add(TableColumn<ShowDetails, String>("Language").apply {
+                cellValueFactory = PropertyValueFactory("language")
+            })
+            add(TableColumn<ShowDetails, String>("Runtime").apply {
+                cellValueFactory = PropertyValueFactory("runtime")
             })
         }
         root.children.add(tableView)
@@ -72,16 +83,16 @@ class JobApp : Application() {
         primaryStage.show()
 
         // Dummy call to create API instance
-        gitHubJobsApi
+        tvShowsApi
     }
 
     private fun performSearch() {
-        getJobDetailsBlocking(textField.text.trim(), tableView)
-//        getJobDetailsWithCallbacks(textField.text.trim(), tableView)
-//        getJobDetailsWithFutures(textField.text.trim(), tableView)
-//        getJobDetailsWithRx(textField.text.trim(), tableView)
-//        getJobDetailsCoroutines(textField.text.trim(), tableView)
-//        getJobDetailsCoroutinesApi(textField.text.trim(), tableView)
+        getShowDetailsBlocking(textField.text.trim(), tableView)
+//        getShowDetailsWithCallbacks(textField.text.trim(), tableView)
+//        getShowDetailsWithFutures(textField.text.trim(), tableView)
+//        getShowDetailsWithRx(textField.text.trim(), tableView)
+//        getShowDetailsCoroutines(textField.text.trim(), tableView)
+//        getShowDetailsCoroutinesApi(textField.text.trim(), tableView)
     }
 
 }

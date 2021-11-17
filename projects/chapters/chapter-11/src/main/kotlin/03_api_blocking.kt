@@ -9,50 +9,54 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
 
-interface GitHubJobsApi {
-    @GET("positions.json")
-    fun getPositions(@Query("description") query: String): Call<List<JobSummary>>
+interface TvShowsApi {
+    @GET("search/shows")
+    fun getShows(@Query("q") query: String): Call<List<ShowResponse>>
 
-    @GET("positions/{id}.json")
-    fun getPositionDetails(@Path("id") id: String): Call<JobDetails>
+    @GET("shows/{id}")
+    fun getShowDetails(
+        @Path("id") id: Int,
+    ): Call<ShowDetails>
 }
 
-val gitHubJobsApi: GitHubJobsApi
+val tvShowsApi: TvShowsApi
     get() {
-        val jobs = Retrofit.Builder()
-            .baseUrl("https://jobs.github.com/")
-            .addConverterFactory(MoshiConverterFactory.create(
-                Moshi.Builder()
-                    .addLast(KotlinJsonAdapterFactory())
-                    .build()
-            ))
+        val shows = Retrofit.Builder()
+            .baseUrl("https://api.tvmaze.com/")
+            .addConverterFactory(
+                MoshiConverterFactory.create(
+                    Moshi.Builder()
+                        .addLast(KotlinJsonAdapterFactory())
+                        .build()
+                )
+            )
             .build()
-        val api = jobs.create<GitHubJobsApi>()
+        val api = shows.create<TvShowsApi>()
         return api
     }
 
 interface BlockingApi {
-    fun search(query: String): List<JobSummary>
-    fun getDetails(jobId: String): JobDetails
+    fun search(query: String): List<ShowSummary>
+    fun getDetails(id: Int): ShowDetails
 }
 
 class BlockingApiImpl : BlockingApi {
-    private val api = gitHubJobsApi
+    private val api = tvShowsApi
 
-    override fun search(query: String): List<JobSummary> {
-        return api.getPositions(query).execute().body()!!
+    override fun search(query: String): List<ShowSummary> {
+        return api.getShows(query).execute().body()!!.map(ShowResponse::show)
     }
 
-    override fun getDetails(jobId: String): JobDetails {
-        return api.getPositionDetails(jobId).execute().body()!!
+    override fun getDetails(id: Int): ShowDetails {
+        return api.getShowDetails(id).execute().body()!!
     }
 }
 
-fun getJobDetailsBlocking(query: String, tableView: TableView<JobDetails>) {
+fun getShowDetailsBlocking(query: String, tableView: TableView<ShowDetails>) {
     val api: BlockingApi = BlockingApiImpl()
 
-    val jobSummaries = api.search(query) // blocking network call
-    val details = jobSummaries.map { summary ->
+    val showSummaries = api.search(query) // blocking network call
+    val details = showSummaries.map { summary ->
         api.getDetails(summary.id) // blocking network calls
     }
 

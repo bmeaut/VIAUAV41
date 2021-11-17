@@ -2,14 +2,14 @@ import javafx.application.Platform
 import javafx.scene.control.TableView
 
 interface CallbackApi {
-    fun search(query: String, callback: (List<JobSummary>) -> Unit)
-    fun getDetails(jobId: String, callback: (JobDetails) -> Unit)
+    fun search(query: String, callback: (List<ShowSummary>) -> Unit)
+    fun getDetails(id: Int, callback: (ShowDetails) -> Unit)
 }
 
 class CallbackApiImpl : CallbackApi {
     private val blockingApi: BlockingApi = BlockingApiImpl()
 
-    override fun search(query: String, callback: (List<JobSummary>) -> Unit) {
+    override fun search(query: String, callback: (List<ShowSummary>) -> Unit) {
         Thread {
             val result = blockingApi.search(query)
             Platform.runLater {
@@ -18,9 +18,9 @@ class CallbackApiImpl : CallbackApi {
         }.start()
     }
 
-    override fun getDetails(jobId: String, callback: (JobDetails) -> Unit) {
+    override fun getDetails(id: Int, callback: (ShowDetails) -> Unit) {
         Thread {
-            val result = blockingApi.getDetails(jobId)
+            val result = blockingApi.getDetails(id)
             Platform.runLater {
                 callback(result)
             }
@@ -28,16 +28,16 @@ class CallbackApiImpl : CallbackApi {
     }
 }
 
-fun getJobDetailsWithCallbacks(query: String, tableView: TableView<JobDetails>) {
+fun getShowDetailsWithCallbacks(query: String, tableView: TableView<ShowDetails>) {
     val callbackApi: CallbackApi = CallbackApiImpl()
 
-    val results = mutableListOf<JobDetails>()
-    callbackApi.search(query) { jobSummaries ->
-        for (job in jobSummaries) {
-            callbackApi.getDetails(job.id) { jobDetails ->
-                results.add(jobDetails)
+    val results = mutableListOf<ShowDetails>()
+    callbackApi.search(query) { showSummaries ->
+        for (show in showSummaries) {
+            callbackApi.getDetails(show.id) { showDetails ->
+                results.add(showDetails)
 
-                if (results.size == jobSummaries.size) {
+                if (results.size == showSummaries.size) {
                     tableView.setData(results)
                 }
             }

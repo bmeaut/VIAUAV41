@@ -5,37 +5,37 @@ import java.util.stream.Collectors
 import java.util.stream.Stream
 
 interface FutureApi {
-    fun search(query: String): CompletableFuture<List<JobSummary>>
-    fun getDetails(jobId: String): CompletableFuture<JobDetails>
+    fun search(query: String): CompletableFuture<List<ShowSummary>>
+    fun getDetails(id: Int): CompletableFuture<ShowDetails>
 }
 
 class FutureApiImpl : FutureApi {
     private val blockingApi: BlockingApi = BlockingApiImpl()
 
-    override fun search(query: String): CompletableFuture<List<JobSummary>> {
+    override fun search(query: String): CompletableFuture<List<ShowSummary>> {
         return CompletableFuture.supplyAsync {
             blockingApi.search(query)
         }
     }
 
-    override fun getDetails(jobId: String): CompletableFuture<JobDetails> {
+    override fun getDetails(id: Int): CompletableFuture<ShowDetails> {
         return CompletableFuture.supplyAsync {
-            blockingApi.getDetails(jobId)
+            blockingApi.getDetails(id)
         }
     }
 }
 
-fun getJobDetailsWithFutures(query: String, tableView: TableView<JobDetails>) {
+fun getShowDetailsWithFutures(query: String, tableView: TableView<ShowDetails>) {
     val futureApi: FutureApi = FutureApiImpl()
 
     futureApi.search(query)
         .thenApply { summaries ->
             val futures = summaries.map { futureApi.getDetails(it.id) }
             Stream.of(*futures.toTypedArray())
-                .map(CompletableFuture<JobDetails>::join)
+                .map(CompletableFuture<ShowDetails>::join)
                 .collect(Collectors.toList())
         }
-        .thenAccept { results: List<JobDetails> ->
+        .thenAccept { results: List<ShowDetails> ->
             Platform.runLater {
                 tableView.setData(results)
             }
