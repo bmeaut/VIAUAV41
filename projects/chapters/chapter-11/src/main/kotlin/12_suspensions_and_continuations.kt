@@ -3,7 +3,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 suspend fun compute(question: String): Int {
-    delay(236_682_000_000_000_000L)
+    delay(236_682_000_000_000_000L) // ~ 7.5 million years
     return 42
 }
 
