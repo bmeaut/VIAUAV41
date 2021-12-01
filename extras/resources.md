@@ -7,9 +7,7 @@
 
 ### Language features
 
-- Contract
-- Inline classes
-- Unsigned types
+- [Contracts](https://kotlinlang.org/docs/whatsnew13.html#contracts)
 
 ### Libraries and tools
 
@@ -28,7 +26,6 @@
 
 - Koin
 - Arrow
-- https://kotlin.link/
 
 ### Subject recommendations
 
@@ -45,8 +42,6 @@
 	- https://www.meetup.com/Kotlin-Budapest/
 - Android Budapest meetup
     - https://www.meetup.com/Android-Budapest/
-- Conference for Kotliners
-	- https://www.conferenceforkotliners.com/
 - YouTube
     - https://www.youtube.com/channel/UCP7uiEZIqci43m22KDl0sNw
 - KotlinConf
