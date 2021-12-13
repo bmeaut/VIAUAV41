@@ -17,16 +17,16 @@
 ## Requirements
 
 - Test (ZH), 50 pts (min. 40%)
-    - Takes place in the timeslot of the 14th week lecture, **9th of December**, 12:15-13:45.
+    - ~Takes place in the timeslot of the 14th week lecture, **9th of December**, 12:15-13:45.~
     - [Old sample test PDF](./docs/kotlin_zh_sample.pdf) 
-    - _There will be one retake of the test, about one week after the regular test. Details to come later._
+    - Retake of the test: **16th of December**, 12:15-13:45, IB026.
 
 - Homework, 50 pts (min. 40%)
     - [**Homework details and ideas**](/docs/homework.md)
     - Submissions will be taken on Moodle.
-    - Specification has to be handed in by the **5th of November** (the Friday of week 9), end of day.
-        - **Note that not handing one in by the deadline results in failing the course, as the homework assignment is a required part.**
-    - Final hand-in of the homework by the **10th of December** (the Friday of week 14), end of day.
+    - ~Specification has to be handed in by the **5th of November** (the Friday of week 9), end of day.~
+        - ~**Note that not handing one in by the deadline results in failing the course, as the homework assignment is a required part.**~
+    - ~Final hand-in of the homework by the **10th of December** (the Friday of week 14), end of day.~
     - _Homework can be handed it with a late fee up until a week late, the 21st of May, until the end of the day._
     - The starter projects in this repository are useful for getting started, depending on the type of application you choose:
       - [Pure Kotlin Gradle project](projects/starters/kotlin-gradle-starter), for command line apps
