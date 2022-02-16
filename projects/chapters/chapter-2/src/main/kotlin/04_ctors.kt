@@ -1,5 +1,5 @@
 //region Helpers
-fun getCurrentYear() = 2021 // TODO update this implementation next year
+fun getCurrentYear() = 2022 // TODO update this implementation next year
 //endregion
 
 class Car(val model: String, val year: Int) {
