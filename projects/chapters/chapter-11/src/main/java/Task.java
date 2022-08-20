@@ -11,4 +11,6 @@ public abstract class Task<T> {
     public void setListener(OnCompleteListener<T> listener) {
         this.listener = listener;
     }
+
+    public void cancel() { /* ... */ }
 }

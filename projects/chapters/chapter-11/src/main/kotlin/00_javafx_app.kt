@@ -98,7 +98,7 @@ class ShowsApp : Application() {
 }
 
 fun <T> TableView<T>.setData(data: List<T>) {
-    require(Platform.isFxApplicationThread())
+    require(Platform.isFxApplicationThread()) { "TableView should only be accessed from the UI thread" }
     items.clear()
     items.addAll(data)
 }

@@ -1,10 +1,11 @@
 package wrappingcallbacks
 
 import Task
+import kotlinx.coroutines.CancellableContinuation
+import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlin.concurrent.thread
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
-import kotlin.coroutines.suspendCoroutine
 
 fun getUsername(): Task<String> {
     return object : Task<String>() {
@@ -31,7 +32,7 @@ fun bad() {
     Thread.sleep(2000)
 }
 
-suspend fun <T> Task<T>.await(): T = suspendCoroutine { cont ->
+suspend fun <T> Task<T>.await(): T = suspendCancellableCoroutine { cont: CancellableContinuation<T> ->
     this.setListener(object : Task.OnCompleteListener<T> {
         override fun onComplete(result: T) {
             cont.resume(result)
@@ -41,6 +42,9 @@ suspend fun <T> Task<T>.await(): T = suspendCoroutine { cont ->
             cont.resumeWithException(exception)
         }
     })
+    cont.invokeOnCancellation {
+        this.cancel()
+    }
 }
 
 suspend fun main() {
