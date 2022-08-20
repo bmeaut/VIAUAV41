@@ -20,9 +20,8 @@ Tests are not generally required. For example, you are not expected to test GUI 
 The starter projects in this repository might be useful for getting started, depending on the type of application you choose:
 
 - [Pure Kotlin Gradle project](../projects/starters/kotlin-gradle-starter), for command line apps (JDK8)
-- [JavaFX game project](../projects/starters/javafx-game-starter), for simple games, with rendering and input handling (JDK8)
+- [JavaFX game project](../projects/starters/javafx-game-starter-jdk8), for simple games, with rendering and input handling (JDK8)
     - [JavaFX game project (JDK11)](../projects/starters/javafx-game-starter-jdk11), same project as above, for JDK11 installations
-- [TornadoFX project](../projects/starters/tornadofx-starter), for TornadoFX-powered desktop UI applications (JDK8)
 
 We expect a zip file with the source code of the application created to be uploaded for the final hand-in.
 
@@ -42,17 +41,17 @@ Implement a `Complex` (or `Rational`) number type which is idiomatic Kotlin. Hav
 
 >Optionally, make sure that your implementation is multiplatform-ready, by placing it all in a common module. Have your tests execute on multiple platforms, at least the JVM and JavaScript.
 
-Other, similar ideas: `Vector` (at least two, or three dimensional) or `Matrix` classes with convenient operator support.
+Other, similar ideas: `Vector` (at least two, or three-dimensional) or `Matrix` classes with convenient operator support.
 
 ### Game of Life
 
-Implement the classic Game of Life cellular automaton. Use JavaFX/[TornadoFX](https://tornadofx.io/) for the graphical user interface, and make it interactive. Let users select and unselect cells, and start/stop/reset the simulation.
+Implement the classic Game of Life cellular automaton. Use JavaFX for the graphical user interface, and make it interactive. Let users select and unselect cells, and start/stop/reset the simulation.
 
 ### Simple games
 
 Implement a game such as snake, pacman, or tetris. Run an event loop, handle user input, and draw things on the screen, handle pausing and/or restarting the current game nicely. Optionally, save and display high scores.
 
-See [this tutorial](https://gamedevelopment.tutsplus.com/tutorials/introduction-to-javafx-for-game-development--cms-23835) and [this repository](https://github.com/tutsplus/Introduction-to-JavaFX-for-Game-Development) for good samples of doing these things in JavaFX. Similarly, you might also use [TornadoFX](https://tornadofx.io/) for this.
+See [this tutorial](https://gamedevelopment.tutsplus.com/tutorials/introduction-to-javafx-for-game-development--cms-23835) and [this repository](https://github.com/tutsplus/Introduction-to-JavaFX-for-Game-Development) for good samples of doing these things in JavaFX.
 
 ### Data analysis
 
@@ -76,7 +75,7 @@ Implement your own [`Sequence`](https://kotlinlang.org/docs/reference/sequences.
 
 ### API browser
 
-Create a JavaFX/[TornadoFX](https://tornadofx.io/) application that accesses data from a public API, and enables browsing that data. Display lists of the data from the API (with sorting/filtering options), show a details page when the user selects a specific item (with related items), load images, etc.
+Create a JavaFX application that accesses data from a public API, and enables browsing that data. Display lists of the data from the API (with sorting/filtering options), show a details page when the user selects a specific item (with related items), load images, etc.
 
 You can find a wide variety of free, public APIs [here](https://github.com/public-apis/public-apis). Some might require you to register for an access token to authenticate with.
 
