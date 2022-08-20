@@ -1,20 +1,10 @@
-buildscript {
-    ext.kotlin_version = '1.5.30'
-
-    dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    }
-    repositories {
-        mavenCentral()
-    }
+plugins {
+    id 'application'
+    id 'org.jetbrains.kotlin.jvm' version '1.6.10'
 }
-
-apply plugin: 'kotlin'
 
 repositories {
     mavenCentral()
 }
 
-dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-}
+mainClassName = 'javafx.example.AppKt'
