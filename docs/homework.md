@@ -32,7 +32,7 @@ We expect a zip file with the source code of the application created to be uploa
 
 Third party dependencies may be used in the project, as long as the project itself still contains meaningful code. Please include these through Maven or Gradle, if possible, so that your project can be built and tested after hand-in.
  
-Documentation is not required, but if starting and testing the project is non-trivial, a short README with instructions would be appreciated.
+Documentation for your project is not required, but if starting and testing the project is non-trivial, a short README with instructions would be appreciated.
 
 ## List of ideas
 
@@ -42,7 +42,7 @@ You'll find a list of possible homework ideas below. These are here to give you 
 
 Implement a `Complex` (or `Rational`) number type which is idiomatic Kotlin. Have it implement any applicable standard interfaces, and all operators that make sense for such a type. Cover the class with JUnit based tests. *Note that if your homework is of this complexity (a single class implementation), tests are required as part of the assignment.*
 
->Optionally, make sure that your implementation is multiplatform-ready, by placing it all in a common module. Have your tests execute on multiple platforms, at least the JVM and JavaScript.
+> Optionally, make sure that your implementation is multiplatform-ready, by placing it all in a common module. Have your tests execute on multiple platforms, at least the JVM and JavaScript.
 
 Other, similar ideas: `Vector` (at least two, or three-dimensional) or `Matrix` classes with convenient operator support.
 
@@ -74,7 +74,7 @@ Another interesting source of data might be [data.world](https://data.world/data
 
 Implement your own [`Sequence`](https://kotlinlang.org/docs/reference/sequences.html) type, with lazily evaluated operations, and terminal operators. The implementation can build on similar concepts as the original implementation, but of course, may not be a straight copy of it. Cover your implementation with JUnit based tests.
 
->Optionally, make sure that your implementation is multiplatform-ready, by placing it all in a common module. Have your tests execute on multiple platforms, at least the JVM and JavaScript.
+> Optionally, make sure that your implementation is multiplatform-ready, by placing it all in a common module. Have your tests execute on multiple platforms, at least the JVM and JavaScript.
 
 ### API browser
 
@@ -84,11 +84,11 @@ You can find a wide variety of free, public APIs [here](https://github.com/publi
 
 For your networking needs, the [Ktor client](https://ktor.io/clients/http-client.html) or [Retrofit](https://square.github.io/retrofit/) are both good choices.
 
-### Multiplatform hello-world
+### Basic multiplatform app
 
 Create a simple application (for example, a basic tip calculator) that can compile to a variety different target platforms of Kotlin: the JVM, JavaScript, and at least one Native target (Windows, macOS, Linux, iOS, or WebAssembly).
 
->Bonus points for performing network calls or using a database in the application.
+> Bonus points for performing network calls or using a database in the application.
 
 ### Ktor app
 
@@ -103,6 +103,8 @@ Same as the Ktor app idea above, using the [Spring Boot](https://spring.io/proje
 ### JavaScript web app
 
 Create a simple web application using Kotlin's [JavaScript target](https://kotlinlang.org/docs/reference/js-overview.html). Let the user input data to it (text, images, etc), organize and display that data, make it editable.
+
+For UI, plain HTML and DOM elements managed from KotlinJS can be used. [Compose for Web](https://compose-web.ui.pages.jetbrains.team/) is also an interesting option.
 
 This can basically be a todo app, but more interesting domain choices such as an inventory management app or student registry would be appreciated.
 
