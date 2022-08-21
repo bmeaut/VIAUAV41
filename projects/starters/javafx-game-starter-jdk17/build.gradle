@@ -15,11 +15,11 @@ dependencies {
 }
 
 tasks.withType(KotlinCompile).configureEach {
-    kotlinOptions.jvmTarget = "11"
+    kotlinOptions.jvmTarget = "17"
 }
 
 javafx {
-    version = '11'
+    version = '17'
     modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 

@@ -1,5 +1,6 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
-    id 'application'
     id 'org.jetbrains.kotlin.jvm' version '1.7.10'
 }
 
@@ -11,4 +12,6 @@ dependencies {
     testImplementation "junit:junit:4.13.2"
 }
 
-mainClassName = 'com.example.MainKt'
+tasks.withType(KotlinCompile).configureEach {
+    kotlinOptions.jvmTarget = "11"
+}

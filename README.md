@@ -37,9 +37,12 @@ Attending is encouraged but not mandatory. See also the [written materials](#cha
     - Final hand-in of the homework by the **20th of May** (the Friday of week 14), end of day.
     - _Homework can be handed it with a late fee up until a week late, the 27th of May, until the end of the day._
     - The starter projects in this repository are useful for getting started, depending on the type of application you choose:
-      - [Pure Kotlin Gradle project](projects/starters/kotlin-gradle-starter), for command line apps
-      - [JavaFX game project](projects/starters/javafx-game-starter-jdk8), for simple games, with rendering and input handling (JDK8)
-        - [JavaFX game project (JDK11)](projects/starters/javafx-game-starter-jdk11), same project as above, for JDK11 (or later) installations
+      - Pure Kotlin Gradle project, for command line apps
+        - [Configured with JDK11](/projects/starters/kotlin-gradle-starter-jdk11)
+        - [Configured with JDK17](/projects/starters/kotlin-gradle-starter-jdk17)
+      - JavaFX game project, for simple games, with basic rendering and input handling
+        - [Configured with JDK11](/projects/starters/javafx-game-starter-jdk11)
+        - [Configured with JDK17](/projects/starters/javafx-game-starter-jdk17)
 
 Minimum scores for grades (based on the sum of test and homework scores): 
 
