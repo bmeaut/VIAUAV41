@@ -20,7 +20,7 @@ Location: ?
 
 Time: Thursdays, 12:15-13:45
 
-Attending is encouraged but not mandatory. See also the [written materials](#chapters) and [recordings](#recordings).
+Attending is encouraged but not mandatory. See also the [written materials](#-chapters) and [recordings](#-recordings).
 
 ## 📝 Requirements
 
