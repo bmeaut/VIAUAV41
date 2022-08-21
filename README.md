@@ -43,6 +43,7 @@ Attending is encouraged but not mandatory. See also the [written materials](#cha
       - JavaFX game project, for simple games, with basic rendering and input handling
         - [Configured with JDK 17](/projects/starters/javafx-game-starter-jdk17) (recommended)
         - [Configured with JDK 11](/projects/starters/javafx-game-starter-jdk11)
+      - [Compose Desktop project](/projects/starters/compose-desktop-starter) for widget-based desktop apps
 
 Minimum scores for grades (based on the sum of test and homework scores): 
 

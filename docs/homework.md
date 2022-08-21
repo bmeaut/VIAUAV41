@@ -25,6 +25,7 @@ The starter projects in this repository might be useful for getting started, dep
 - JavaFX game project, for simple games, with basic rendering and input handling
   - [Configured with JDK 17](/projects/starters/javafx-game-starter-jdk17) (recommended)
   - [Configured with JDK 11](/projects/starters/javafx-game-starter-jdk11)
+- [Compose Desktop project](/projects/starters/compose-desktop-starter) for widget-based desktop apps
 
 We expect a zip file with the source code of the application created to be uploaded for the final hand-in.
 
@@ -78,7 +79,7 @@ Implement your own [`Sequence`](https://kotlinlang.org/docs/reference/sequences.
 
 ### API browser
 
-Create a JavaFX application that accesses data from a public API, and enables browsing that data. Display lists of the data from the API (with sorting/filtering options), show a details page when the user selects a specific item (with related items), load images, etc.
+Create a Compose Desktop or JavaFX application that accesses data from a public API, and enables browsing that data. Display lists of the data from the API (with sorting/filtering options), show a details page when the user selects a specific item (with related items), load images, etc.
 
 You can find a wide variety of free, public APIs [here](https://github.com/public-apis/public-apis). Some might require you to register for an access token to authenticate with.
 
