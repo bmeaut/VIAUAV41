@@ -38,11 +38,11 @@ Attending is encouraged but not mandatory. See also the [written materials](#cha
     - _Homework can be handed it with a late fee up until a week late, the 27th of May, until the end of the day._
     - The starter projects in this repository are useful for getting started, depending on the type of application you choose:
       - Pure Kotlin Gradle project, for command line apps
-        - [Configured with JDK11](/projects/starters/kotlin-gradle-starter-jdk11)
-        - [Configured with JDK17](/projects/starters/kotlin-gradle-starter-jdk17)
+        - [Configured with JDK 17](/projects/starters/kotlin-gradle-starter-jdk17) (recommended)
+        - [Configured with JDK 11](/projects/starters/kotlin-gradle-starter-jdk11)
       - JavaFX game project, for simple games, with basic rendering and input handling
-        - [Configured with JDK11](/projects/starters/javafx-game-starter-jdk11)
-        - [Configured with JDK17](/projects/starters/javafx-game-starter-jdk17)
+        - [Configured with JDK 17](/projects/starters/javafx-game-starter-jdk17) (recommended)
+        - [Configured with JDK 11](/projects/starters/javafx-game-starter-jdk11)
 
 Minimum scores for grades (based on the sum of test and homework scores): 
 
@@ -56,10 +56,9 @@ Minimum scores for grades (based on the sum of test and homework scores):
 ### Tools
 
 - Java Development Kit (JDK)
-    - Oracle JDK8 is recommended and is generally used by the provided projects, [download it here]( https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
-        - Registration is required for download, but is free
-    - If you know what you're doing, feel free to use newer JDK versions
-    - **To make sure you're using the correct JDK when running your app, see [JDK settings](/docs/jdk-settings.md)**
+    - JDK 17 is recommended and is generally used by the provided projects in the course
+      - If you know what you're doing, feel free to use other (e.g. newer) JDK versions
+    - **See the [JDK setup](/docs/jdk-setup.md) page to learn how to set up a JDK in IntelliJ IDEA**
 - IDE: [IntelliJ IDEA](https://www.jetbrains.com/idea/) is recommended
     - The Community edition is free for everyone, and supports basic Kotlin projects
     - The Ultimate edition is free for students, [get a license here](https://www.jetbrains.com/community/education/#students)
