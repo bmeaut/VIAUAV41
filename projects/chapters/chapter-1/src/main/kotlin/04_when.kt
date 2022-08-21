@@ -38,6 +38,13 @@ fun main() {
     }
 
 
+    val enabled = false
+    when (enabled) {
+        true -> println("Enabled!")
+        false -> println("Disabled :(")
+    }
+
+
     fun check1(x: Int, y: Int) = x % 2 == y
     fun check2(x: Int, y: Int) = x * y < 100
 
@@ -49,4 +56,5 @@ fun main() {
             println("x and y didn't pass advanced validation")
         }
     }
+
 }
