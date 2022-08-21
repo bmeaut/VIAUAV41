@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.7.10'
 }
@@ -8,4 +10,8 @@ repositories {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-script-runtime"
+}
+
+tasks.withType(KotlinCompile).configureEach {
+    kotlinOptions.jvmTarget = "17"
 }

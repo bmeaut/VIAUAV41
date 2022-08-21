@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.7.10'
 }
@@ -21,4 +23,8 @@ dependencies {
 
     def rxjava_version = '3.1.5'
     implementation "io.reactivex.rxjava3:rxjava:$rxjava_version"
+}
+
+tasks.withType(KotlinCompile).configureEach {
+    kotlinOptions.jvmTarget = "17"
 }

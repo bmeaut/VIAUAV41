@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
     id 'application'
     id 'org.jetbrains.kotlin.jvm' version '1.7.10'
@@ -8,3 +10,7 @@ repositories {
 }
 
 mainClassName = 'javafx.example.AppKt'
+
+tasks.withType(KotlinCompile).configureEach {
+    kotlinOptions.jvmTarget = "17"
+}
