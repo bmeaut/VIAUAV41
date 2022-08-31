@@ -16,7 +16,7 @@
 
 ## 👨‍🏫 Lectures
 
-Location: ?
+Location: IB026
 
 Time: Thursdays, 12:15-13:45
 
