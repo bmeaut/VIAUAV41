@@ -4,15 +4,20 @@
 
 - [Chapter 1: Introduction](./material/1.md)
 - [Chapter 2: Object-Oriented Programming](./material/2.md)
+    - [Extras](./material/2-extras.md)*
 - [Chapter 3: Nullability](./material/3.md)
 - [Chapter 4: Functional Programming](./material/4.md)
 - [Chapter 5: Collections](./material/5.md)
 - [Chapter 6: Functions, Functions, Functions!](./material/6.md)
 - [Chapter 7: Standard Library Showcase](./material/7.md)
 - [Chapter 8: Operators, Conventions, and Delegates](./material/8.md)
+  - [Extras](./material/8-extras.md)*
 - [Chapter 9: The Type System](./material/9.md)
 - [Chapter 10: Generics](./material/10.md)
+  - [Extras](./material/10-extras.md)*
 - [Chapter 11: Coroutines](material/11.md)
+
+_* The *Extras* pages provide additional detail for some chapters, covering more than we usually have time for during the course. These are optional to study. Read them at your own leisure, they will not be part of the test._
 
 ## 👨‍🏫 Lectures
 
@@ -79,6 +84,6 @@ Older recordings:
 * [2020/21/1](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJkncYRaDt-u0cR4jO8F5H7a)
 * [2019/20/2](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJnfmDp_t-PihwG6DtE9L8Vy)
 
-### ✨ Extras
+### ✨ Other
 
 - [Various resources mentioned on the last lectures of the semesters](extras/resources.md)
