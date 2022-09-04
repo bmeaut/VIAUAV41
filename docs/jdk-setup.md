@@ -3,7 +3,7 @@
 This page describes how to set up JDKs (builds of the Java Development Kit) on your machine and in your Gradle-based Kotlin projects.
 
 * [Choosing and downloading JDKs](#choosing-and-downloading-jdks)
-* [Adding JDKs to IntelliJ](#adding-jdks-to-intellij)
+* [Managing JDKs in IntelliJ](#managing-jdks-in-intellij)
 * [Setting the JDK to use in your project](#setting-the-jdk-to-use-in-your-project)
   * [The project JDK](#the-project-jdk)
   * [The Gradle JDK](#the-gradle-jdk)
@@ -18,17 +18,21 @@ The oldest supported JDK to use at the moment is JDK 8, and Kotlin compiles to J
 
 There are many distributions of JDK available that you can choose from. If you don't have any other preference, [Azul's Zulu JDK](https://www.azul.com/downloads/?version=java-17-lts&package=jdk) is a popular build of OpenJDK.
 
-## Adding JDKs to IntelliJ
+You can also download JDKs directly with Intellij IDEA - keep reading to see how.
+
+## Managing JDKs in IntelliJ
 
 The list of configured JDKs in IntelliJ can be checked by going to the *SDKs* tab of the *Project structure* dialog. These are the SDKs that will be available to choose for your projects.
 
 ![List of available SDKs](./images/jdk-settings-jdks.png)
 
-After downloading a new JDK, you can use the *Add JDK...* option to browse for it and add it to IntelliJ. 
+If you've already dowloaded a new JDK, you can use the *Add JDK...* option to browse for it and add it to IntelliJ.
 
 ![Adding a new SDK](./images/jdk-settings-jdks-add.png)
 
-(You can also use the *Download JDK...* option in this menu to download a new JDK of your choice and add it in one easy step.)
+You can also use the *Download JDK...* option in this menu to download a new JDK of your choice and add it in one easy step.
+
+![Downloading a new JDK](./images/jdk-settings-jdks-download.png)
 
 ## Setting the JDK to use in your project
 
@@ -40,13 +44,13 @@ Set your JDK in the project settings (*File -> Project Structure -> Project tab*
 
 ![Project level SDK settings](./images/jdk-settings-project.png)
 
-This is the JDK that will be used when you run an application from the IDE, for example, by using the *Play* icon in the gutter:
+This is the JDK that will be used when you run an application from the IDE, for example, by using the *Play* icon in the gutter (which creates a new run configuration for you):
 
-![](./images/run-from-gutter.png)
+![Creating and running a Kotlin run configuration](./images/run-from-gutter.png)
 
-... or next to a Kotlin run configuration:
+... or next to an existing Kotlin run configuration:
 
-![](./images/run-run-config.png)
+![Running a Kotlin run configuration](./images/run-run-config.png)
 
 ### The Gradle JDK
 
@@ -56,8 +60,8 @@ Go to the global IDE settings (*File -> Settings*), and check that Gradle (*Buil
 
 This is the JDK that will be used by Gradle, which happens when you invoke Gradle build commands from the command line:
 
-![](./images/run-gradle.png)
+![Running a Gradle task from the command line](./images/run-gradle.png)
 
 ... or use a Gradle run configuration:
 
-![](./images/run-gradle-run-config.png)
+![Running a Gradle task from a run configuration](./images/run-gradle-run-config.png)
