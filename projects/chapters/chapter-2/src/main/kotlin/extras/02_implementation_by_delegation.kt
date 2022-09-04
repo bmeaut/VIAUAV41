@@ -1,3 +1,4 @@
+package extras
 
 fun main() {
     val badSet = BadInstrumentedHashSet<Int>()

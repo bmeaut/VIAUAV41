@@ -1,11 +1,8 @@
-package invariance
+package extras
 
-import contravariance.HandoffPoint
-import covariance.PickupPoint
+import invariance.Garage
 import variance.Car
 import variance.Tesla
-
-interface Garage<T : Car> : PickupPoint<T>, HandoffPoint<T>
 
 fun emptyGarage(garage: Garage<out Car>) {
     while (true) {

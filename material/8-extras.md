@@ -133,7 +133,7 @@ object PersistentStringFactory {
 The `PersistentString` class has to be updated at this point, to receive the key to use as a parameter, but that's easy enough:
 
 ```kotlin
-class PersistentString(private val key: String) : ReadWriteProperty<Any?, String> {
+class PersistentString(key: String) : ReadWriteProperty<Any?, String> {
     private var cachedValue: String
 
     init {

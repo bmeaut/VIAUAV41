@@ -3,7 +3,7 @@ import kotlin.properties.PropertyDelegateProvider
 import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
 
-class PersistentString(private val key: String) : ReadWriteProperty<Any?, String> {
+class PersistentString(key: String) : ReadWriteProperty<Any?, String> {
     private var cachedValue: String
 
     init {
