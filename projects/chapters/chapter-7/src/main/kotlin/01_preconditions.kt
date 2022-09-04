@@ -40,8 +40,7 @@ class FileReader(private val fileName: String) : Reader {
     }
 
     override fun readBytes(byteCount: Int): ByteArray {
-        val input = inputStream
-        check(input != null) { "Reader must be opened first" }
+        val input = checkNotNull(inputStream) { "Reader must be opened first" }
         require(byteCount > 0) { "Byte count has to be a positive number (was $byteCount)" }
 
         val arr = ByteArray(byteCount)
