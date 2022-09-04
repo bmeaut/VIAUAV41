@@ -228,6 +228,12 @@ println(set.addCount) // 5
 
 Interestingly, this feature - also referred to as *implementation by delegation* - has been named as the "worst" feature in Kotlin by the lead language designer, Andrey Breslav on several occasions (e.g. during the [KotlinConf 2018 closing panel discussion](https://youtu.be/heqjfkS4z2I?t=646)).
 
+## Summary
+
+Classes may have only secondary constructors, as long as they all (directly or indirectly) initialize all properties of the class.
+
+Kotlin's implementation by delegation feature makes forwarding many calls to a contained instance easier, encouraging composition over inheritance.
+
 ## Sources
 
 - [Effective Java - Joshua Bloch](https://www.amazon.co.uk/Effective-Java-Joshua-Bloch-ebook/dp/B078H61SCH/)
