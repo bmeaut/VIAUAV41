@@ -3,10 +3,16 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     id 'application'
     id 'org.jetbrains.kotlin.jvm' version '1.7.10'
+    id 'org.openjfx.javafxplugin' version '0.0.13'
 }
 
 repositories {
     mavenCentral()
+}
+
+javafx {
+    version = '17'
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
 mainClassName = 'javafx.example.AppKt'
