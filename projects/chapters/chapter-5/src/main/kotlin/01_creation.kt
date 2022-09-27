@@ -4,6 +4,9 @@ fun main() {
     val list2: MutableList<Int> = mutableListOf(1, 2, 3)
     val list3: List<Any> = listOf(1, "two", 3.0)
 
+    val set = setOf(1, 2, 3, 1, 3, 4)
+    println(set) // [1, 2, 3, 4]
+
     val scores = mutableMapOf(
         "Jim" to 2450,
         "Claire" to 1050,
