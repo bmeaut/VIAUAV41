@@ -32,9 +32,7 @@ fun main() {
     val crimes = listOf("2014", "2015", "2016")
         .map { year -> "data/chicago_crime_$year.csv" }
         .map { name -> File(name) }
-        .flatMap { file ->
-            file.readLines().drop(1)
-        }
+        .flatMap { file -> file.readLines().drop(1) }
         .map { Crime(it.split(",")) }
 
     println("# of crimes: ${crimes.size}") // # of crimes: 754541
