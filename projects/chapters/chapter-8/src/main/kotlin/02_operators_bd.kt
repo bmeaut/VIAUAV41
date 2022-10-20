@@ -1,12 +1,6 @@
 import java.math.BigDecimal
 import java.math.MathContext
 
-//region Fake Java 9 API supplement
-fun BigDecimal.sqrt(mathContext: MathContext): BigDecimal {
-    TODO("implement")
-}
-//endregion
-
 fun solve1(
     a: BigDecimal, b: BigDecimal, c: BigDecimal
 ): Pair<BigDecimal, BigDecimal> {
