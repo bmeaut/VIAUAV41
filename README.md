@@ -30,9 +30,9 @@ Attending is encouraged but not mandatory. See also the [written materials](#-ch
 ## 📝 Requirements
 
 - Test (ZH), 50 pts (min. 40%)
-    - Takes place in the timeslot of the 14th week lecture, **8th of December**, 12:15-13:45.
+    - Takes place in the timeslot of the 14th week lecture, **8th of December**, 12:15-13:45, IB026.
     - [Old sample test PDF](./docs/kotlin_zh_sample.pdf) 
-    - Retake of the test: **15th of December**, 12:15-13:45.
+    - Retake of the test: **15th of December**, 12:15-13:45, QBF08.
 
 - Homework, 50 pts (min. 40%)
     - [**Assignment details and ideas**](/docs/homework.md)
