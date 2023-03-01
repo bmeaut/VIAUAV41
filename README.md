@@ -78,7 +78,7 @@ Lectures from the current semester:
 
 Older recordings:
 
-* [**2022/23/1**](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJkyyKoWNxfsNKRmXiISVC7Y) 
+* [2022/23/1](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJkyyKoWNxfsNKRmXiISVC7Y) 
 * [2021/22/2](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJldwARfTbvIQyqaL1BbsfH5)
 * [2021/22/1](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJlZeGhWhFDh5kXNRiX4R---)
 * [2020/21/2](https://youtube.com/playlist?list=PLmQ4JcLQsrJmfh8JSMNjQx2CpjIvJVZiv)
