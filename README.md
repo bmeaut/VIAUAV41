@@ -32,7 +32,7 @@ Attending is encouraged but not mandatory. See also the [written materials](#-ch
 - Test (ZH), 50 pts (min. 40%)
     - Takes place in the timeslot of the 14th week lecture, **1st of June**, 12:15-13:45, IB026.
     - [Old sample test PDF](./docs/kotlin_zh_sample.pdf) 
-    - Retake of the test: **8th of June**, 12:15-13:45.
+    - Retake of the test: **8th of June 10:15-11:45 (!)**, QBF10.
 
 - Homework, 50 pts (min. 40%)
     - [**Assignment details and ideas**](/docs/homework.md)
