@@ -7,7 +7,7 @@ The first assignment to complete in the semester is a specification of your home
 - It should be an easy to open and presentable file containing what you've chosen as your assignment. Good formats: pdf, txt. Bad formats: docx, png, exe.
 - It can be high level. 3-10 sentences clearly describing the application that will be built is all that's expected here - keep it simple.
 
-The specifications can be uploaded on [Moodle](https://edu.vik.bme.hu/mod/assign/view.php?id=85803).
+The specifications can be uploaded on [Moodle](https://edu.vik.bme.hu/mod/assign/view.php?id=101399).
 
 We don't expect large, complex applications to be implemented for this subject. We expect simple applications, but they have to be sensible, somewhat practical, and functional (as in operating well, not the [paradigm](https://en.wikipedia.org/wiki/Functional_programming)).
 
@@ -27,7 +27,7 @@ The starter projects in this repository might be useful for getting started, dep
   - [Configured with JDK 11](/projects/starters/javafx-game-starter-jdk11)
 - [Compose Desktop project](/projects/starters/compose-desktop-starter) for widget-based desktop apps
 
-We expect a zip file with the source code of the application created to be uploaded for the final hand-in.
+We expect a zip file with the source code of the application created to be uploaded for the final hand-in, which is through [Moodle](https://edu.vik.bme.hu/mod/assign/view.php?id=101400).
 
 > The easiest way to create a zip file without including unnecessary build artifacts and local files is to use the *File -> Export -> Project to Zip File...* option in IntelliJ IDEA.
 
@@ -38,6 +38,8 @@ Documentation for your project is not required, but if starting and testing the 
 ## List of ideas
 
 You'll find a list of possible homework ideas below. These are here to give you pointers on the kinds of applications you may choose to create. You can choose one of these ideas directly as is, alter these ideas to suit what you feel like building, or come up with anything on your own that's of similar complexity.
+
+As the course's materials don't cover any specific UI or web frameworks, command line apps can also be created, but you should feel free to use any frameworks you know or can learn independently.
 
 ### Complex number class
 
