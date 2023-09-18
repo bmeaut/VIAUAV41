@@ -42,10 +42,12 @@ class BlockingApiImpl : BlockingApi {
     private val api = tvShowsApi
 
     override fun search(query: String): List<ShowSummary> {
+        Thread.sleep(200L)
         return api.getShows(query).execute().body()!!.map(ShowResponse::show)
     }
 
     override fun getDetails(id: Int): ShowDetails {
+        Thread.sleep(200L)
         return api.getShowDetails(id).execute().body()!!
     }
 }
