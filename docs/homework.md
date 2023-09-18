@@ -7,7 +7,7 @@ The first assignment to complete in the semester is a specification of your home
 - It should be an easy to open and presentable file containing what you've chosen as your assignment. Good formats: pdf, txt. Bad formats: docx, png, exe.
 - It can be high level. 3-10 sentences clearly describing the application that will be built is all that's expected here - keep it simple.
 
-The specifications can be uploaded on [Moodle](https://edu.vik.bme.hu/mod/assign/view.php?id=101399).
+The specifications can be uploaded on [Moodle](https://edu.vik2.md.bme.hu/mod/assign/view.php?id=101399).
 
 We don't expect large, complex applications to be implemented for this subject. We expect simple applications, but they have to be sensible, somewhat practical, and functional (as in operating well, not the [paradigm](https://en.wikipedia.org/wiki/Functional_programming)).
 
@@ -43,11 +43,9 @@ As the course's materials don't cover any specific UI or web frameworks, command
 
 ### Complex number class
 
-Implement a `Complex` (or `Rational`) number type which is idiomatic Kotlin. Have it implement any applicable standard interfaces, and all operators that make sense for such a type. Cover the class with JUnit based tests. *Note that if your homework is of this complexity (a single class implementation), tests are required as part of the assignment.*
+Implement a `Vector3` (or `Matrix`) type which is idiomatic Kotlin. Have it implement any applicable standard interfaces, and all operators that make sense for such a type. Cover the class with JUnit based tests. *Note that if your homework is of this complexity (a single class implementation), tests are required as part of the assignment.*
 
-> Optionally, make sure that your implementation is multiplatform-ready, by placing it all in a common module. Have your tests execute on multiple platforms, at least the JVM and JavaScript.
-
-Other, similar ideas: `Vector` (at least two, or three-dimensional) or `Matrix` classes with convenient operator support.
+> Optionally, make sure that your implementation is multiplatform-ready, by placing it all in a common module. Have your tests execute on at least two platforms.
 
 ### Game of Life
 
@@ -89,9 +87,7 @@ For your networking needs, the [Ktor client](https://ktor.io/clients/http-client
 
 ### Basic multiplatform app
 
-Create a simple application (for example, a basic tip calculator) that can compile to a variety different target platforms of Kotlin: the JVM, JavaScript, and at least one Native target (Windows, macOS, Linux, iOS, or WebAssembly).
-
-> Bonus points for performing network calls or using a database in the application.
+Create a simple application (for example, a basic tip calculator) that can compile to a variety different target platforms of Kotlin: the JVM, JavaScript, and at least one Native target (Windows, macOS, Linux, iOS, or WebAssembly). Ideally, you should perform network calls or using a database in the application.
 
 ### Ktor app
 
