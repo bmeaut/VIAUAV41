@@ -32,7 +32,7 @@ Attending is encouraged but not mandatory. See also the [written materials](#-ch
 - Test (ZH), 50 pts (min. 40%)
     - Takes place in the timeslot of the 14th week lecture, **5th of December**, 12:15-13:45, IB025.
     - [Old sample test PDF](./docs/kotlin_zh_sample.pdf) 
-    - Retake of the test: **12th of December**, 12:15-13:45, room TBD.
+    - Retake of the test: **12th of December**, 12:15-13:45, QBF15.
 
 - Homework, 50 pts (min. 40%)
     - [**Assignment details and ideas**](/docs/homework.md)
