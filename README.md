@@ -74,11 +74,11 @@ Minimum scores for grades (based on the sum of test and homework scores):
 
 Lectures from the current semester:
  
-* [**2023/24/1**](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJnyDrAWsd8q1g_gdZBYaO_B)
+* [**2023/24/2**](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJnyDrAWsd8q1g_gdZBYaO_B)
 
 Older recordings:
 
-* [**2023/24/1**](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJm-_TF8biqtJ9Mzch1bOh6L)
+* [2023/24/1](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJm-_TF8biqtJ9Mzch1bOh6L)
 * [2022/23/2](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJkMq1YPCH529ewq41VlQp6Q)
 * [2022/23/1](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJkyyKoWNxfsNKRmXiISVC7Y) 
 * [2021/22/2](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJldwARfTbvIQyqaL1BbsfH5)
