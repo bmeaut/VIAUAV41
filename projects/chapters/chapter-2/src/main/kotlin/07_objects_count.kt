@@ -6,10 +6,12 @@ class Document1 {
     val id = Counter.count++
 }
 
-repeat(5) {
-    Document1()
+fun useDocument() {
+    repeat(5) {
+        Document1()
+    }
+    println(Document1.Counter.count) // 5
 }
-println(Document1.Counter.count) // 5
 
 
 class Document2 {
@@ -20,7 +22,9 @@ class Document2 {
     val id = Counter.count++
 }
 
-repeat(5) {
-    Document2()
+fun useDocument2() {
+    repeat(5) {
+        Document2()
+    }
+    println(Document2.count) // 5
 }
-println(Document2.count) // 5

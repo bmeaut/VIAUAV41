@@ -9,6 +9,8 @@ object Logger {
     }
 }
 
-Logger.log("Hello world") // Hello world
-Logger.isEnabled = false
-Logger.log("Oh no, where's my log") //
+fun main() {
+    Logger.log("Hello world") // Hello world
+    Logger.isEnabled = false
+    Logger.log("Oh no, where's my log") //
+}
