@@ -1,6 +1,6 @@
 import javafx.scene.text.Text
 
-class FormData(
+data class FormData(
     val name: String?,
     val role: String?,
     val address: String?
