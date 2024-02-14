@@ -18,7 +18,7 @@ The oldest supported JDK to use at the moment is JDK 8, and Kotlin compiles to J
 
 There are many distributions of JDK available that you can choose from. If you don't have any other preference, [Azul's Zulu JDK](https://www.azul.com/downloads/?version=java-17-lts&package=jdk) is a popular build of OpenJDK.
 
-You can also download JDKs directly with Intellij IDEA - keep reading to see how.
+You can also download JDKs directly with IntelliJ IDEA - keep reading to see how.
 
 ## Managing JDKs in IntelliJ
 

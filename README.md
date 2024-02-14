@@ -21,26 +21,26 @@ _* The *Extras* pages provide additional detail for some chapters, covering more
 
 ## 👨‍🏫 Lectures
 
-Location: IB025
+Location: IB026
 
-Time: Tuesdays, 12:15-13:45
+Time: Thursdays, 12:15 - 13:45
 
-Attending is encouraged but not mandatory. See also the [written materials](#-chapters) and [recordings](#-recordings).
+Attendance is encouraged but not mandatory. See also the [written materials](#-chapters) and [recordings](#-recordings).
 
 ## 📝 Requirements
 
 - Test (ZH), 50 pts (min. 40%)
-    - Takes place in the timeslot of the 14th week lecture, **5th of December**, 12:15-13:45, IB025.
+    - Takes place in the timeslot of the 14th week lecture, **23rd of May**, 12:15-13:45, IB026.
     - [Old sample test PDF](./docs/kotlin_zh_sample.pdf) 
-    - Retake of the test: **12th of December**, 12:15-13:45, QBF15.
+    - Retake of the test: **30th of May**, 12:15-13:45, room TBD.
 
 - Homework, 50 pts (min. 40%)
     - [**Assignment details and ideas**](/docs/homework.md)
     - Submissions will be taken on Moodle.
-    - Specification has to be handed in by the **27th of October** (the Friday of week 8), end of day.
+    - Specification has to be handed in by the **19th of April of October** (the Friday of week 9), end of day.
         - **Note that not handing one in by the deadline results in failing the course, as the homework assignment is a required part.**
-    - Final hand-in of the homework by the **8th of December** (the Friday of week 14), end of day.
-    - _Homework can be handed it with a late fee up until a week late, the 15th of December, until the end of the day._
+    - Final hand-in of the homework by the **24th of May** (the Friday of week 14), end of day.
+    - _Homework can be handed it with a late fee up until a week late, the 31st of May, until the end of the day._
     - The starter projects in this repository are useful for getting started, depending on the type of application you choose:
       - Pure Kotlin Gradle project, for command line apps
         - [Configured with JDK 17](/projects/starters/kotlin-gradle-starter-jdk17) (recommended)
@@ -73,11 +73,12 @@ Minimum scores for grades (based on the sum of test and homework scores):
 ### 📺 Recordings
 
 Lectures from the current semester:
-
-* [**2023/24/1**](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJm-_TF8biqtJ9Mzch1bOh6L)
+ 
+* [**2023/24/1**](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJnyDrAWsd8q1g_gdZBYaO_B)
 
 Older recordings:
 
+* [**2023/24/1**](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJm-_TF8biqtJ9Mzch1bOh6L)
 * [2022/23/2](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJkMq1YPCH529ewq41VlQp6Q)
 * [2022/23/1](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJkyyKoWNxfsNKRmXiISVC7Y) 
 * [2021/22/2](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJldwARfTbvIQyqaL1BbsfH5)

@@ -11,9 +11,9 @@ The specifications can be uploaded on [Moodle](https://edu.vik2.md.bme.hu/mod/as
 
 We don't expect large, complex applications to be implemented for this subject. We expect simple applications, but they have to be sensible, somewhat practical, and functional (as in operating well, not the [paradigm](https://en.wikipedia.org/wiki/Functional_programming)).
 
-**Please note that Android applications may not be chosen as homework assignments, as they are covered in [their own subject](https://www.aut.bme.hu/Course/android)**.
+**Please note that Android applications may not be chosen as homework assignments, as they are covered in [their own course](https://www.aut.bme.hu/Course/android)**.
 
-Tests are not generally required. For example, you are not expected to test GUI applications or web applications - but if you add tests, it's still appreciated. However, tests are required if you implement something very simple, such as the first idea below.
+Tests are not generally required. For example, you are not expected to test GUI applications or web applications — but if you add tests, it's still appreciated. However, tests are required if you implement something very simple, such as the first idea below.
 
 ## Technical info and project hand-in
 
@@ -31,31 +31,35 @@ We expect a zip file with the source code of the application created to be uploa
 
 > The easiest way to create a zip file without including unnecessary build artifacts and local files is to use the *File -> Export -> Project to Zip File...* option in IntelliJ IDEA.
 
-Third party dependencies may be used in the project, as long as the project itself still contains meaningful code. Please include these through Maven or Gradle, if possible, so that your project can be built and tested after hand-in.
+Third-party dependencies may be used in the project, as long as the project itself still contains meaningful code. Please include these through Maven or Gradle, if possible, so that your project can be built and tested after hand-in.
  
 Documentation for your project is not required, but if starting and testing the project is non-trivial, a short README with instructions would be appreciated.
 
 ## List of ideas
 
-You'll find a list of possible homework ideas below. These are here to give you pointers on the kinds of applications you may choose to create. You can choose one of these ideas directly as is, alter these ideas to suit what you feel like building, or come up with anything on your own that's of similar complexity.
+You'll find a list of possible homework ideas below. These are here to give you pointers on the kinds of applications you may choose to create. You can choose one of these ideas directly as-is, alter these ideas to suit what you feel like building, or come up with anything on your own that's of similar complexity.
 
 As the course's materials don't cover any specific UI or web frameworks, command line apps can also be created, but you should feel free to use any frameworks you know or can learn independently.
 
-### Complex number class
+### Matrix class
 
-Implement a `Vector3` (or `Matrix`) type which is idiomatic Kotlin. Have it implement any applicable standard interfaces, and all operators that make sense for such a type. Cover the class with JUnit based tests. *Note that if your homework is of this complexity (a single class implementation), tests are required as part of the assignment.*
+Implement a `Matrix` type which is idiomatic Kotlin. Have it implement any applicable standard interfaces, and all operators that make sense for such a type.
+
+Cover the class with JUnit based tests. *Note that if your homework is of this complexity (a single class implementation), tests are required as part of the assignment.*
 
 > Optionally, make sure that your implementation is multiplatform-ready, by placing it all in a common module. Have your tests execute on at least two platforms.
-
-### Game of Life
-
-Implement the classic Game of Life cellular automaton. Use JavaFX for the graphical user interface, and make it interactive. Let users select and unselect cells, and start/stop/reset the simulation.
 
 ### Simple games
 
 Implement a game such as snake, pacman, or tetris. Run an event loop, handle user input, and draw things on the screen, handle pausing and/or restarting the current game nicely. Optionally, save and display high scores.
 
 See [this tutorial](https://gamedevelopment.tutsplus.com/tutorials/introduction-to-javafx-for-game-development--cms-23835) and [this repository](https://github.com/tutsplus/Introduction-to-JavaFX-for-Game-Development) for good samples of doing these things in JavaFX.
+
+Your game can also use the command line for input and output instead of a graphics library.
+
+### Game of Life
+
+Implement the classic Game of Life cellular automaton. Use JavaFX for the graphical user interface, and make it interactive. Let users select and unselect cells, and start/stop/reset the simulation.
 
 ### Data analysis
 
@@ -75,7 +79,7 @@ Another interesting source of data might be [data.world](https://data.world/data
 
 Implement your own [`Sequence`](https://kotlinlang.org/docs/reference/sequences.html) type, with lazily evaluated operations, and terminal operators. The implementation can build on similar concepts as the original implementation, but of course, may not be a straight copy of it. Cover your implementation with JUnit based tests.
 
-> Optionally, make sure that your implementation is multiplatform-ready, by placing it all in a common module. Have your tests execute on multiple platforms, at least the JVM and JavaScript.
+> Optionally, make sure that your implementation is multiplatform-ready, by placing it all in a common module. Have your tests execute on multiple platforms, at least the JVM and Native.
 
 ### API browser
 
@@ -87,25 +91,17 @@ For your networking needs, the [Ktor client](https://ktor.io/clients/http-client
 
 ### Basic multiplatform app
 
-Create a simple application (for example, a basic tip calculator) that can compile to a variety different target platforms of Kotlin: the JVM, JavaScript, and at least one Native target (Windows, macOS, Linux, iOS, or WebAssembly). Ideally, you should perform network calls or using a database in the application.
+Create a simple application (for example, a basic tip calculator) that can compile to at least three different [target platforms](https://kotlinlang.org/docs/multiplatform-dsl-reference.html#targets) of Kotlin. Ideally, you should perform network calls or use a database in the application.
 
 ### Ktor app
 
-Use [Ktor](https://ktor.io/), a *very Kotlin* web framework from JetBrains to create a simple web application that provides a REST API and stores data persistently in a database. The application should contain at least some basic business logic.
+Use [Ktor](https://ktor.io/), a *very Kotlin* web framework from JetBrains to create a simple web application that provides a REST API and stores data persistently in a database. The application should contain at least some basic business logic in addition to accessing and storing data.
 
 This can be a pizza delivery service, a favourite movies app, or anything else that provides similar functionality.
 
 ### Spring Boot app
 
 Same as the Ktor app idea above, using the [Spring Boot](https://spring.io/projects/spring-boot) framework (see also: [the Spring Initializr](https://start.spring.io/)).
-
-### JavaScript web app
-
-Create a simple web application using Kotlin's [JavaScript target](https://kotlinlang.org/docs/reference/js-overview.html). Let the user input data to it (text, images, etc), organize and display that data, make it editable.
-
-For UI, plain HTML and DOM elements managed from KotlinJS can be used. [Compose for Web](https://compose-web.ui.pages.jetbrains.team/) is also an interesting option.
-
-This can basically be a todo app, but more interesting domain choices such as an inventory management app or student registry would be appreciated.
 
 ### DSL
 
