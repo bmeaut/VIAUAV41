@@ -3,6 +3,7 @@
 ## 📚 Chapters
 
 - [Chapter 1: Introduction](./material/1.md)
+    - [Extras](./material/1-extras.md)*
 - [Chapter 2: Object-Oriented Programming](./material/2.md)
     - [Extras](./material/2-extras.md)*
 - [Chapter 3: Nullability](./material/3.md)
