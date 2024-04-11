@@ -3,6 +3,7 @@
 ## 📚 Chapters
 
 - [Chapter 1: Introduction](./material/1.md)
+    - [Extras](./material/1-extras.md)*
 - [Chapter 2: Object-Oriented Programming](./material/2.md)
     - [Extras](./material/2-extras.md)*
 - [Chapter 3: Nullability](./material/3.md)
@@ -37,7 +38,7 @@ Attendance is encouraged but not mandatory. See also the [written materials](#-c
 - Homework, 50 pts (min. 40%)
     - [**Assignment details and ideas**](/docs/homework.md)
     - Submissions will be taken on Moodle.
-    - Specification has to be handed in by the **19th of April of October** (the Friday of week 9), end of day.
+    - Specification has to be handed in by the **19th of April** (the Friday of week 9), end of day.
         - **Note that not handing one in by the deadline results in failing the course, as the homework assignment is a required part.**
     - Final hand-in of the homework by the **24th of May** (the Friday of week 14), end of day.
     - _Homework can be handed it with a late fee up until a week late, the 31st of May, until the end of the day._
