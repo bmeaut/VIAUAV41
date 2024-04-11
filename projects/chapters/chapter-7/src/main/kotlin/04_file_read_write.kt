@@ -3,7 +3,7 @@ import java.io.File
 import java.io.FileReader
 
 fun main() {
-    val file = File("build.gradle")
+    val file = File("build.gradle.kts")
     val lines = mutableListOf<String>()
     val reader = BufferedReader(FileReader(file))
     var line: String? = reader.readLine()
