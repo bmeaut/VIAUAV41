@@ -88,6 +88,15 @@ Older recordings:
 * [2020/21/1](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJkncYRaDt-u0cR4jO8F5H7a)
 * [2019/20/2](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJnfmDp_t-PihwG6DtE9L8Vy)
 
+### 📚 Books
+
+While not required to complete the course, these books are excellent resources for learning Kotlin.
+
+- [Kotlin in Action, Second Edition](https://www.manning.com/books/kotlin-in-action-second-edition) (Sebastian Aigner, Roman Elizarov, Svetlana Isakova, and Dmitry Jemerov)
+    - Written by members of the Kotlin team at JetBrains. A complete guide to Kotlin, with tons of detailed information about *why* the language works the way it does, and official best practices and conventions. Significant chunks of both the 1st and 2nd edition were used to prepare the materials for this course.
+- [Kotlin: An Illustrated Guide](https://typealias.com/start/) (Dave Leeds)
+    - A high-quality illustrated tour through Kotlin from basics to advanced topics. All of its content is available chapter-by-chapter online, with a PDF version available for purchase.
+
 ### ✨ Other
 
 - [Various resources mentioned on the last lectures of the semesters](extras/resources.md)
