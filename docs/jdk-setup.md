@@ -14,9 +14,9 @@ For more about managing SDKs, see the [SDKs page](https://www.jetbrains.com/help
 
 Kotlin isn't strongly tied to JDK versions in general. New language features depend on the Kotlin language version (Gradle plugin + standard library version) and not on the JDK version being used.
 
-The oldest supported JDK to use at the moment is JDK 8, and Kotlin compiles to Java 1.8 bytecode by default. However, it's a good idea to **use the** latest stable, or the **latest stable LTS (long-term support) version of the JDK** for the best experience. This course will generally work with **JDK 17**.
+The oldest supported JDK to use at the moment is JDK 8, and Kotlin compiles to Java 1.8 bytecode by default. However, it's a good idea to **use the** latest stable, or the **latest stable LTS (long-term support) version of the JDK** for the best experience. This course will generally work with **JDK 21**.
 
-There are many distributions of JDK available that you can choose from. If you don't have any other preference, [Azul's Zulu JDK](https://www.azul.com/downloads/?version=java-17-lts&package=jdk) is a popular build of OpenJDK.
+There are many distributions of JDK available that you can choose from. If you don't have any other preference, [Azul's Zulu JDK](https://www.azul.com/downloads/?version=java-21-lts&package=jdk) is a popular build of OpenJDK.
 
 You can also download JDKs directly with IntelliJ IDEA - keep reading to see how.
 
