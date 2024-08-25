@@ -1,11 +1,16 @@
-package com.example.something
+package com.example.something.props
 
-import java.math.BigDecimal
+class Person(var firstName: String, var lastName: String)
 
-val Int.bd: BigDecimal
-    get() = BigDecimal(this)
+var Person.fullName: String
+    get() = "$firstName $lastName"
+    set(value) {
+        val (first, last) = value.split(" ")
+        this.firstName = first
+        this.lastName = last
+    }
 
 fun main() {
-    val thousand: BigDecimal = 1000.bd
-    println(thousand)
+    val person = Person("Buttermilk", "Cabbagepatch")
+    println(person.fullName)
 }
