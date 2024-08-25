@@ -18,5 +18,5 @@ tasks.test {
 application.mainClass = "MainKt"
 
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(21)
 }
