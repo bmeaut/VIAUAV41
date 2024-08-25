@@ -62,7 +62,7 @@ Minimum scores for grades (based on the sum of test and homework scores):
 ### 🛠 Tools
 
 - Java Development Kit (JDK)
-    - JDK 17 is recommended and is generally used by the provided projects in the course
+    - JDK 21 is recommended and is generally used by the provided projects in the course
       - If you know what you're doing, feel free to use other (e.g. newer) JDK versions
     - **See the [JDK setup](/docs/jdk-setup.md) page to learn how to set up a JDK in IntelliJ IDEA**
 - IDE: [IntelliJ IDEA](https://www.jetbrains.com/idea/) is recommended
@@ -73,11 +73,12 @@ Minimum scores for grades (based on the sum of test and homework scores):
 ### 📺 Recordings
 
 Lectures from the current semester:
- 
-* [**2023/24/2**](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJnyDrAWsd8q1g_gdZBYaO_B)
+
+* [**2024/25/1**](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJlqMLIj9mqNowI-bnh1jRY9)
 
 Older recordings:
 
+* [**2023/24/2**](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJnyDrAWsd8q1g_gdZBYaO_B)
 * [2023/24/1](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJm-_TF8biqtJ9Mzch1bOh6L)
 * [2022/23/2](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJkMq1YPCH529ewq41VlQp6Q)
 * [2022/23/1](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJkyyKoWNxfsNKRmXiISVC7Y) 
