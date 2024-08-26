@@ -20,10 +20,10 @@ Tests are not generally required. For example, you are not expected to test GUI 
 The starter projects in this repository might be useful for getting started, depending on the type of application you choose:
 
 - Pure Kotlin Gradle project, for command line apps
-  - [Configured with JDK 11](/projects/starters/kotlin-gradle-starter-jdk21) (recommended)
+  - [Configured with JDK 21](/projects/starters/kotlin-gradle-starter-jdk21) (recommended)
   - [Configured with JDK 17](/projects/starters/kotlin-gradle-starter-jdk17)
 - JavaFX game project, for simple games, with basic rendering and input handling
-  - [Configured with JDK 11](/projects/starters/javafx-game-starter-jdk21) (recommended)
+  - [Configured with JDK 21](/projects/starters/javafx-game-starter-jdk21) (recommended)
   - [Configured with JDK 17](/projects/starters/javafx-game-starter-jdk17) 
 
 You can also use the [Kotlin Multiplatform Wizard](https://kmp.jetbrains.com/) for Compose Multiplatform apps, including Desktop and Web apps.

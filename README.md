@@ -44,10 +44,10 @@ Attendance is strongly encouraged but not mandatory. See also the [written mater
     - _Homework can be handed it with a late fee up until a week late, the 13th of December, until the end of the day._
     - Starter projects for getting started, depending on the type of application you choose:
       - Pure Kotlin Gradle project, for command line apps
-        - [Configured with JDK 11](/projects/starters/kotlin-gradle-starter-jdk21) (recommended)
+        - [Configured with JDK 21](/projects/starters/kotlin-gradle-starter-jdk21) (recommended)
         - [Configured with JDK 17](/projects/starters/kotlin-gradle-starter-jdk17)
       - JavaFX game project, for simple games, with basic rendering and input handling
-        - [Configured with JDK 11](/projects/starters/javafx-game-starter-jdk21) (recommended)
+        - [Configured with JDK 21](/projects/starters/javafx-game-starter-jdk21) (recommended)
         - [Configured with JDK 17](/projects/starters/javafx-game-starter-jdk17)
       - Use the [Kotlin Multiplatform Wizard](https://kmp.jetbrains.com/) for Compose Multiplatform apps, including Desktop and Web apps
 
