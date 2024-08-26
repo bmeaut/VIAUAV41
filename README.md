@@ -7,6 +7,7 @@
     - [Extras](./material/2-extras.md)*
 - [Chapter 3: Nullability](./material/3.md)
 - [Chapter 4: Functional Programming](./material/4.md)
+    - [Extras](./material/4-extras.md)*
 - [Chapter 5: Collections](./material/5.md)
 - [Chapter 6: Functions, Functions, Functions!](./material/6.md)
 - [Chapter 7: Standard Library Showcase](./material/7.md)
@@ -78,7 +79,7 @@ Lectures from the current semester:
 
 Older recordings:
 
-* [**2023/24/2**](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJnyDrAWsd8q1g_gdZBYaO_B)
+* [2023/24/2](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJnyDrAWsd8q1g_gdZBYaO_B)
 * [2023/24/1](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJm-_TF8biqtJ9Mzch1bOh6L)
 * [2022/23/2](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJkMq1YPCH529ewq41VlQp6Q)
 * [2022/23/1](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJkyyKoWNxfsNKRmXiISVC7Y) 
