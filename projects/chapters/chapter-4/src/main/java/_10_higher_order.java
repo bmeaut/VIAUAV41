@@ -1,5 +1,3 @@
-package com.example.something;
-
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
 
