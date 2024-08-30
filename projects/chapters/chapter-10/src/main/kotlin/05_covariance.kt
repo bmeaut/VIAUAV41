@@ -1,26 +1,26 @@
 package covariance
 
-import variance.Car
-import variance.Tesla
+import variance.Snack
+import variance.Pretzel
 
-interface PickupPoint<out T : Car> {
+interface Dispenser<out T : Snack> {
     fun take(): T?
 }
 
-fun testPickup(pickupPoint: PickupPoint<Car>) {
-    // Take a car from the pickup point
-    val car: Car = requireNotNull(pickupPoint.take())
-    println("Driving a $car")
+fun testDispenser(dispenser: Dispenser<Snack>) {
+    // Take a snack from the dispenser
+    val snack: Snack = requireNotNull(dispenser.take())
+    println("Grabbing a $snack")
 }
 
 fun main() {
-    val carPickup = object: PickupPoint<Car> {
-        override fun take(): Car? { TODO() }
+    val snackDispenser = object: Dispenser<Snack> {
+        override fun take(): Snack? { TODO() }
     }
-    testPickup(carPickup)
+    testDispenser(snackDispenser)
 
-    val teslaPickup = object: PickupPoint<Tesla> {
-        override fun take(): Tesla? { TODO() }
+    val pretzelDispenser = object: Dispenser<Pretzel> {
+        override fun take(): Pretzel? { TODO() }
     }
-    testPickup(teslaPickup)
+    testDispenser(pretzelDispenser)
 }

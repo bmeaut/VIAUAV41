@@ -1,24 +1,24 @@
 package contravariance
 
-import variance.Car
-import variance.Tesla
+import variance.Snack
+import variance.Pretzel
 
-interface HandoffPoint<in T : Car> {
-    fun park(car: T)
+interface Collector<in T : Snack> {
+    fun insert(snack: T)
 }
 
-fun testHandoff(handoff: HandoffPoint<Tesla>) {
-    handoff.park(Tesla())
+fun testCollector(collector: Collector<Pretzel>) {
+    collector.insert(Pretzel())
 }
 
 fun main() {
-    val teslaHandoff = object : HandoffPoint<Tesla> {
-        override fun park(car: Tesla) { TODO() }
+    val pretzelCollector = object : Collector<Pretzel> {
+        override fun insert(snack: Pretzel) { TODO() }
     }
-    testHandoff(teslaHandoff)
+    testCollector(pretzelCollector)
 
-    val carHandoff = object : HandoffPoint<Car> {
-        override fun park(car: Car) { TODO() }
+    val snackCollector = object : Collector<Snack> {
+        override fun insert(snack: Snack) { TODO() }
     }
-    testHandoff(carHandoff)
+    testCollector(snackCollector)
 }

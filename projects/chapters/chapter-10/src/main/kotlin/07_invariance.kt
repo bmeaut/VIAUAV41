@@ -1,7 +1,7 @@
 package invariance
 
-import contravariance.HandoffPoint
-import covariance.PickupPoint
-import variance.Car
+import contravariance.Collector
+import covariance.Dispenser
+import variance.Snack
 
-interface Garage<T : Car> : PickupPoint<T>, HandoffPoint<T>
+interface Box<T : Snack> : Dispenser<T>, Collector<T>
