@@ -50,6 +50,31 @@ fun `example of any and all`() {
     val anyK = names.any { it.startsWith("K") } // true, succeeds at Kyra
 }
 
+fun `example of partition`() {
+    val numbers = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    val (odds, evens) = numbers.partition { it % 2 == 1 }
+
+    println(odds) // [1, 3, 5, 7, 9]
+    println(evens) // [2, 4, 6, 8, 10]
+}
+
+fun `example of groupBy`() {
+    val names = listOf("Alex", "Sam", "Teo", "James", "Grey")
+    val groups: Map<Int, List<String>> = names.groupBy { it.length }
+
+    println(groups) // {4=[Alex, Grey], 3=[Sam, Teo], 5=[James]}
+}
+
+fun `example of chunked and windowed`() {
+    val dailyTemperatures = listOf(21, 30, 26, 29, 29, 26, 30, 23, 27, 24, 23, 25, 30, 28)
+
+    val sevenDayValues: List<List<Int>> = dailyTemperatures.windowed(7)
+    println(sevenDayValues)
+
+    val weeklyValues: List<List<Int>> = dailyTemperatures.chunked(7)
+    println(weeklyValues)
+}
+
 fun `combined example`() {
     val words = listOf("camel", "pizza", "mug", "box", "shirt")
 
