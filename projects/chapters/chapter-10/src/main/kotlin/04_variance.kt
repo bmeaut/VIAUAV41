@@ -1,36 +1,35 @@
 package variance
 
-open class Car
-class Tesla : Car()
-class Fiat : Car()
-class Audi : Car()
+abstract class Snack
+class Pretzel : Snack()
+class Donut : Snack()
 
-interface Garage<T : Car> {
-    fun park(car: T)
+interface Box<T : Snack> {
+    fun insert(snack: T)
     fun take(): T?
 }
 
-fun testGarage(garage: Garage<Car>) {
-    // Empty the garage
+fun testBox(box: Box<Snack>) {
+    // Empty the box
     while (true) {
-        val car: Car = garage.take() ?: break
-        println("Removed $car")
+        val snack: Snack = box.take() ?: break
+        println("Removed $snack")
     }
-    // Park a new car
-    garage.park(Car())
+    // Add a new snack
+    box.insert(Donut())
 }
 
-class CarGarage : Garage<Car> {
-    override fun park(car: Car) { TODO() }
-    override fun take(): Car { TODO() }
+class SnackBox : Box<Snack> {
+    override fun insert(snack: Snack) { TODO() }
+    override fun take(): Snack { TODO() }
 }
 
-class TeslaGarage : Garage<Tesla> {
-    override fun park(car: Tesla) { TODO() }
-    override fun take(): Tesla { TODO() }
+class PretzelBox : Box<Pretzel> {
+    override fun insert(snack: Pretzel) { TODO() }
+    override fun take(): Pretzel { TODO() }
 }
 
 fun main() {
-    testGarage(CarGarage())
-//    testGarage(TeslaGarage())
+    testBox(SnackBox())
+//    testBox(PretzelBox())
 }

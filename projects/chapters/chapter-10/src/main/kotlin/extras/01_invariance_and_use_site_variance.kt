@@ -1,40 +1,47 @@
 package extras
 
-import invariance.Garage
-import variance.Car
-import variance.Tesla
+import invariance.Box
+import variance.Snack
+import variance.Pretzel
 
-fun emptyGarage(garage: Garage<out Car>) {
+
+fun emptyBox(box: Box<out Snack>) {
     while (true) {
-        val car: Car = garage.take() ?: break
-        println("Removed $car")
+        val snack: Snack = box.take() ?: break
+        println("Removed $snack")
     }
 }
 
-fun parkTesla(garage: Garage<in Tesla>) {
-    garage.park(Tesla())
+fun insertPretzel(box: Box<in Pretzel>) {
+    box.insert(Pretzel())
 }
 
-fun useGarage(garage: Garage<*>) {
-    // Use non-generic functions?
+fun useBox(box: Box<*>) {
+    box.take
 }
+
+
+
+
+
+
 
 fun main() {
-    val garage: Garage<Car> = object : Garage<Car> {
-        override fun take(): Car? { TODO() }
-        override fun park(car: Car) { TODO() }
+    val snackBox: Box<Snack> = object : Box<Snack> {
+        override fun take(): Snack? { TODO() }
+        override fun insert(snack: Snack) { TODO() }
     }
-    val teslaGarage: Garage<Tesla> = object :Garage<Tesla> {
-        override fun take(): Tesla? { TODO() }
-        override fun park(car: Tesla) { TODO() }
+    val pretzelBox: Box<Pretzel> = object :Box<Pretzel> {
+        override fun take(): Pretzel? { TODO() }
+        override fun insert(snack: Pretzel) { TODO() }
     }
 
-    emptyGarage(garage)
-    emptyGarage(teslaGarage)
+    emptyBox(snackBox)
+    emptyBox(pretzelBox)
 
-    parkTesla(garage)
-    parkTesla(teslaGarage)
+    insertPretzel(snackBox)
+    insertPretzel(pretzelBox)
 
-    useGarage(garage)
-    useGarage(teslaGarage)
+    useBox(snackBox)
+    useBox(pretzelBox)
 }
