@@ -1,6 +1,6 @@
 package com.example.something
 
-import view.View
+import View
 
 fun example(view: View) {
 
