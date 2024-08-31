@@ -17,6 +17,7 @@
 - [Chapter 10: Generics](./material/10.md)
   - [Extras](./material/10-extras.md)*
 - [Chapter 11: Coroutines](material/11.md)
+  - [Extras](./material/11-extras.md)*
 
 _* The *Extras* pages provide additional detail for some chapters, covering more than we usually have time for during the course. These are optional to study. Read them at your own leisure, they will not be part of the test._
 

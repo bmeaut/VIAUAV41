@@ -26,5 +26,6 @@ suspend fun processEntities(entities: List<String>) = withContext(Dispatchers.IO
     entities.forEach { entity ->
         saveToServer(entity)
         saveToDisk(entity)
+        ensureActive()
     }
 }
