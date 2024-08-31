@@ -1,16 +1,14 @@
 package com.example.something
 
 //region Helpers
-abstract class Context
-
-abstract class Activity : Context()
+abstract class Activity
 
 class Toast {
     companion object {
         const val LENGTH_SHORT = 1
         const val LENGTH_LONG = 2
 
-        fun makeText(context: Context, text: String, duration: Int): Toast {
+        fun makeText(context: Activity, text: String, duration: Int): Toast {
             TODO("return a Toast instance")
         }
     }
@@ -31,6 +29,6 @@ class MainActivity : Activity() {
 
 }
 
-fun Context.toast(message: String, duration: Int = Toast.LENGTH_SHORT) {
+fun Activity.toast(message: String, duration: Int = Toast.LENGTH_SHORT) {
     Toast.makeText(this, message, duration).show()
 }
