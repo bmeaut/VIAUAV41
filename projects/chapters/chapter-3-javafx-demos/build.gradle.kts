@@ -9,11 +9,11 @@ repositories {
 }
 
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(21)
 }
 
 javafx {
-    version = "17"
+    version = "21"
     modules = listOf("javafx.controls", "javafx.fxml")
 }
 
