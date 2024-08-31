@@ -1,6 +1,8 @@
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import java.math.BigInteger
+import kotlin.coroutines.cancellation.CancellationException
 import kotlin.random.Random
 
 suspend fun failedValueFetch(): Int = withContext(Dispatchers.Default) {
@@ -18,5 +20,15 @@ suspend fun tryToFetchValue() {
     }
 }
 
-suspend fun findBigPrime(): BigInteger =
-    BigInteger.probablePrime(4096, java.util.Random())
+fun main() {
+    GlobalScope.launch {
+        try {
+            failedValueFetch()
+        } catch (e: Exception) {
+            if (e is CancellationException) {
+                throw e
+            }
+            // Handle other exceptions
+        }
+    }
+}

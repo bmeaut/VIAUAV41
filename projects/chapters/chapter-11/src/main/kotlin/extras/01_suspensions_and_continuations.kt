@@ -1,3 +1,5 @@
+package extras
+
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
