@@ -1,22 +1,27 @@
 package subtyping
 
+open class SavingsAccount {
+    open fun deposit(amount: Int): Number {
+        require(amount >= 0)
 
-open class Car {
-    open fun drive(miles: Int): Number {
-        require(miles >= 0)
-        TODO("Compute & return some default consumption value...")
-    }
-}
-class Tesla : Car() {
-    override fun drive(miles: Int): Int {
-        return 0 // No gallons consumed, duh!
+        TODO("Compute and return the updated balance")
     }
 }
 
-fun drive(car: Car) {
-    println("Driving $car, vroom vroom")
+class AccessibleSavingsAccount : SavingsAccount() {
+    private var balance = 0
+
+    override fun deposit(amount: Int): Int {
+        balance += amount
+        return balance
+    }
+}
+
+fun useAccount(account: SavingsAccount) {
+    account.deposit(100)
 }
 
 fun main() {
-    drive(Tesla())
+    useAccount(SavingsAccount())
+    useAccount(AccessibleSavingsAccount())
 }
