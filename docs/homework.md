@@ -7,7 +7,7 @@ The first assignment to complete in the semester is a specification of your home
 - The specification should in an easy-to-open and presentable file. Some good formats: pdf, txt. Bad formats: docx, png, exe.
 - The specification should explain you've chosen as your assignment. This explanation can be high level. 3-10 sentences clearly describing the application that will be built is all that's expected here - keep it simple.
 
-The specifications can be uploaded on [Moodle](https://edu.vik2.md.bme.hu/mod/assign/view.php?id=101399).
+The specifications can be uploaded on [Moodle](https://edu.vik.bme.hu/mod/assign/view.php?id=136859).
 
 We don't expect large, complex applications to be implemented for this subject. We expect simple applications, but they have to be sensible, somewhat practical, and functional (as in, operating well, not the [paradigm](https://en.wikipedia.org/wiki/Functional_programming)).
 
@@ -28,7 +28,7 @@ The starter projects in this repository might be useful for getting started, dep
 
 You can also use the [Kotlin Multiplatform Wizard](https://kmp.jetbrains.com/) for Compose Multiplatform apps, including Desktop and Web apps.
 
-We expect a zip file with the source code of the application to be uploaded for the final hand-in, which is through [Moodle](https://edu.vik.bme.hu/mod/assign/view.php?id=101400). **This zip file should contain all required files to build the application, such as Gradle-related files describing the build configuration. It should not contain built artifacts, such as the contents of `build` folders.**
+We expect a zip file with the source code of the application to be uploaded for the final hand-in, which is through [Moodle](https://edu.vik.bme.hu/mod/assign/view.php?id=136860). **This zip file should contain all required files to build the application, such as Gradle-related files describing the build configuration. It should not contain built artifacts, such as the contents of `build` folders.**
 
 Here's a generic example of what to include and what not to include:
 
