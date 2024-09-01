@@ -236,5 +236,5 @@ Kotlin's implementation by delegation feature makes forwarding many calls to a c
 
 ## Sources
 
-- [Effective Java - Joshua Bloch](https://www.amazon.co.uk/Effective-Java-Joshua-Bloch-ebook/dp/B078H61SCH/)
+- [Effective Java - Joshua Bloch](https://www.oreilly.com/library/view/effective-java-3rd/9780134686097/)
 - [Delegation](https://kotlinlang.org/docs/reference/delegation.html)
