@@ -33,7 +33,7 @@ fun main() {
         }
         1, 2, 3 -> println("Bad")
         in 4..6 -> println("Average")
-        in 7 until 10 -> println("Good")
+        in 7..<10 -> println("Good")
         10 -> println("Perfect")
     }
 
