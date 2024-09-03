@@ -41,8 +41,8 @@ Attendance is strongly encouraged but not mandatory. See also the [written mater
     - Submissions will be taken on Moodle.
     - Specification has to be handed in by the **25th of October** (the Friday of week 8), end of day.
         - **Note that not handing one in by the deadline results in failing the course, as the homework assignment is a required part.**
-    - Final hand-in of the homework by the **6th of December** (the Friday of week 14), end of day.
-    - _Homework can be handed it with a late fee up until a week late, the 13th of December, until the end of the day._
+    - Final hand-in of the homework by the **3rd of December** (the Tuesday of week 14), end of day.
+    - _Homework can be handed it with a late fee up until a week late, the 10th of December, until the end of the day._
     - Starter projects for getting started, depending on the type of application you choose:
       - Pure Kotlin Gradle project, for command line apps
         - [Configured with JDK 21](/projects/starters/kotlin-gradle-starter-jdk21) (recommended)
