@@ -194,7 +194,7 @@ class InstrumentedSet<E>(private val set: MutableSet<E>) : MutableSet<E> by set
 
 > [`MutableSet`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/) is Kotlin's equivalent interface to [`java.util.Set`](https://docs.oracle.com/javase/8/docs/api/java/util/Set.html). We'll study Kotlin's collection types and API in detail later on.
 
-Now our `InstrumentedSet` implements the `MutableSet` interface via the `set` property. Whenever a method is invoked on it, it will simply invoke the same method on the contained `set`. This is a one-liner implementation of `FowardingSet`!
+Now our `InstrumentedSet` implements the `MutableSet` interface through the `set` property. Whenever a method is invoked on it, it will simply invoke the same method on the contained `set`. This is a one-liner implementation of `FowardingSet`!
 
 All that's left to do then is to modify the `add` and `addAll` methods:
 

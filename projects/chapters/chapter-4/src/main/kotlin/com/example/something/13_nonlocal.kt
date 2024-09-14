@@ -8,7 +8,7 @@ inline fun repeat(times: Int, actions: () -> Unit) {
     }
 }
 
-inline fun funky(crossinline body: () -> Unit) {
+inline fun wrapInRunnable(crossinline body: () -> Unit) {
     val runnable = object : Runnable {
         override fun run() {
             body()
@@ -26,7 +26,7 @@ fun main() {
         println("Success")
     }
 
-    funky {
+    wrapInRunnable {
         println("This is really quite complicated!")
     }
 }
