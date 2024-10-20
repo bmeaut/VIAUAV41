@@ -1,4 +1,4 @@
-class Time(hours: Int, minutes: Int) {
+class Time(hours: Int, minutes: Int) : Comparable<Time> {
     private val totalMinutes = hours * 60 + minutes
 
     val hours: Int
@@ -6,14 +6,23 @@ class Time(hours: Int, minutes: Int) {
     val minutes: Int
         get() = totalMinutes % 60
 
+    override fun equals(other: Any?): Boolean {
+        if (other !is Time) return false
+        return totalMinutes == other.totalMinutes
+    }
 
+    override fun hashCode(): Int {
+        return totalMinutes
+    }
+
+    override operator fun compareTo(other: Time): Int {
+        return totalMinutes - other.totalMinutes
+    }
 }
 
 class TimeRange(private val start: Time, private val end: Time) : Iterable<Time> {
     operator fun contains(time: Time): Boolean {
-        val timeMinutes = time.hours * 60 + time.minutes
-        return start.hours * 60 + start.minutes <= timeMinutes &&
-                timeMinutes <= end.hours * 60 + end.minutes
+        return start <= time && time <= end
     }
 
     override operator fun iterator(): Iterator<Time> {
@@ -44,6 +53,14 @@ operator fun Time.component1(): Int = hours
 operator fun Time.component2(): Int = minutes
 
 fun main() {
+    val sixAm = Time(6, 0)
+    val sixOClock = Time(6, 0)
+    println(sixAm == sixOClock) // true
+    println(sixAm != sixOClock) // false
+
+    println(Time(5, 0) < Time(6, 0)) // true
+    println(Time(5, 0) >= Time(10, 25)) // false
+
     val morning = Time(8, 0)
     val evening = Time(17, 0)
 
