@@ -17,7 +17,7 @@ public interface ReadWriteProperty<in T, V> : ReadOnlyProperty<T, V> {
 }
 ```
 
-Let's implement another delegate, using this read-write interface. We'll create a `PersistentString` delegate, which will store a `String` value on disk, transparently. We'll implement the interface above, and in each method, use the `string.txt` file to store our value.
+Let's implement another delegate, using this read-write interface. We'll create a `PersistentString`, which will store a `String` value on disk, transparently. We'll implement the interface above, and in each method, use the `string.txt` file to actually store our value.
 
 ```kotlin
 class PersistentString : ReadWriteProperty<Any?, String> {
@@ -36,13 +36,13 @@ class PersistentString : ReadWriteProperty<Any?, String> {
 }
 ```
 
-Let's add a factory function for this delegate, too:
+Let's add a factory function for this delegate:
 
 ```kotlin
 fun persistentString(): ReadWriteProperty<Any?, String> = PersistentString()
 ```
 
-This is a working implementation, that can store our `String` value persistently:
+This is a working implementation already, that can store our `String` value persistently:
 
 ```kotlin
 // first run
@@ -55,7 +55,7 @@ var str by persistentString()
 println(str) // "hello"
 ```
 
-There's the issue of this `PersistentString` operating on a single, hardcoded file. What if we want to use multiple persisted `String` properties simultaneously? We could introduce a constructor parameter to the delegate class, where the filename could be provided. We can do one better: use the name of the property as the filename!
+There's the issue of this `PersistentString` operating on a single, hardcoded file. What if we want to use multiple persisted `String` properties simultaneously? We could introduce a constructor parameter to the delegate class, where the filename could be provided. Even simpler though, we can choose to use the name of the property as the filename!
 
 Here's where the second parameter of the getter and setter functions comes into play. This parameter is named `property`, and has the type of [`KProperty`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-property/).
 
@@ -115,7 +115,7 @@ class PersistentString() : ReadWriteProperty<Any?, String> {
 
 ### The `provideDelegate` function
 
-Here's where `provideDelegate` comes into play. This is a third operator you can make use of when creating your own delegates, and it allows you to define factory classes for your delegates - an extra layer of indirection.
+Here's where `provideDelegate` comes into play. This is a third operator you can make use of when creating your own delegates, and it allows you to define factory classes for your delegates - an extra layer of indirection when the instance is being created.
 
 To solve our troubles with `PersistedString`, we can create a `PersistentStringFactory` that will be tasked with creating our delegates. The `provideDelegate` function, just like the previous two, has a well-defined signature by convention - the parameters of which you'll already be familiar with: it receives the `thisRef` and `property` parameters, and can use these to create a `ReadWriteProperty`:
 
@@ -153,9 +153,9 @@ class PersistentString(key: String) : ReadWriteProperty<Any?, String> {
 
 > Note the way we've refactored the initializer to a more functional code style, using [`takeIf`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/take-if.html) to convert the question of whether the file exists into a question of nullability.
 
-How do we use this factory? We just delegate to it, as if it was the delegate instance backing our property. The compiler will then prompt the factory to create a delegate instance, and forward any accessor calls to that instance.
+How do we use this factory? We just delegate to it, as if it was the delegate instance backing our property. The compiler will then prompt the factory to create a delegate instance to initialize the property, and then forward any accessor (`getValue`/`setValue`) calls to that instance.
 
-Like the previous delegate conventions, this one has its own corresponding interface too ([since Kotlin 1.4](https://kotlinlang.org/docs/whatsnew14.html#delegated-properties-improvements)). This interface is called [`PropertyDelegateProvider`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.properties/-property-delegate-provider/), and we can make our factory implement it like so:
+Like the previous delegate conventions, this one has its own corresponding interface. This is called [`PropertyDelegateProvider`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.properties/-property-delegate-provider/), and we can make our factory implement it like so:
 
 ```kotlin
 object PersistentStringFactory
@@ -171,7 +171,7 @@ object PersistentStringFactory
 
 The first type parameter here, again, is the class in which the delegate may be used in. The second parameter is the delegate type it produces.
 
-The `persistentString` factory function can now return this factory type instead of a `ReadWriteProperty`, to keep the factory a private implementation detail:
+The `persistentString` factory function can now return this factory type, to keep the factory a private implementation detail:
 
 ```kotlin
 fun persistentString(): PropertyDelegateProvider<Any?, ReadWriteProperty<Any?, String>> {
@@ -192,9 +192,9 @@ var str by persistentString()
 println(str) // "hello"
 ```
 
-Introducing this factory also lets us fix a bug that we've introduced by caching our value inside the delegate. With the current implementation, if multiple strings with the same name are declared, only the one that a write was performed through will have its cached value updated, while the rest will hold outdated values in memory. They won't read from file after the initialization, because it's assumed that the value in the file only changes when their setter is invoked.
+Introducing this factory also lets us fix a bug that we've introduced by caching our value inside the delegate. With the current implementation, if multiple strings with the same name are declared, only the one that a write was performed through will have its cached value updated, while the rest will hold outdated values in memory. They won't read again from a file after their initialization, because it's assumed that the value in the file only changes when their setter is invoked.
 
-This factory gives us control over the `PersistentString` instances being created, and we can ensure that only a single one of them exists for each name:
+As this factory gives us control over the `PersistentString` instances being created, we can ensure that only a single one of them exists for each name:
 
 ```kotlin
 object PersistentStringFactory 
