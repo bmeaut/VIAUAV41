@@ -1,8 +1,8 @@
 package variance
 
-abstract class Snack
-class Pretzel : Snack()
-class Donut : Snack()
+interface Snack
+class Pretzel : Snack
+class Donut : Snack
 
 interface Box<T : Snack> {
     fun insert(snack: T)
