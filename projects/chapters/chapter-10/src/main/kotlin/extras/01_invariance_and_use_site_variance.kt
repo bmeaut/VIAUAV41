@@ -17,7 +17,7 @@ fun insertPretzel(box: Box<in Pretzel>) {
 }
 
 fun useBox(box: Box<*>) {
-    box.take
+    // Use non-generic functions?
 }
 
 
