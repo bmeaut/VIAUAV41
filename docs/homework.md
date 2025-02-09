@@ -4,10 +4,10 @@
 
 The first assignment to complete in the semester is a specification of your homework project. Note that not handing in a specification in by the deadline results in failing the course, as the homework assignment is a required part.
 
-- The specification should in an easy-to-open and presentable file. Some good formats: pdf, txt. Bad formats: docx, png, exe.
+- The specification should in an easy-to-open and presentable file. Moodle should accept .txt or .pdf files.
 - The specification should explain you've chosen as your assignment. This explanation can be high level. 3-10 sentences clearly describing the application that will be built is all that's expected here - keep it simple.
 
-The specifications can be uploaded on [Moodle](https://edu.vik.bme.hu/mod/assign/view.php?id=136859).
+The specifications can be uploaded on [Moodle](https://edu.vik.bme.hu/mod/assign/view.php?id=155289).
 
 We don't expect large, complex applications to be implemented for this subject. We expect simple applications, but they have to be sensible, somewhat practical, and functional (as in, operating well, not the [paradigm](https://en.wikipedia.org/wiki/Functional_programming)).
 
