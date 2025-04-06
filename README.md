@@ -33,7 +33,7 @@ Attendance is strongly encouraged but not mandatory. See also the [written mater
 ## 📝 Requirements
 
 - Test (ZH), 50 pts (min. 40%)
-    - Takes place in the timeslot of the 14th week lecture, **19th of May**, 12:15-13:45, IB026.
+    - Takes place in the timeslot of the **13th week** lecture, **12th of May**, 12:15-13:45, IB026.
     - [Old sample test PDF](./docs/kotlin_zh_sample.pdf) 
   - Retake of the test: **26th of May**, 12:15-13:45, TBD.
 
