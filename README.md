@@ -33,17 +33,17 @@ Attendance is strongly encouraged but not mandatory. See also the [written mater
 ## 📝 Requirements
 
 - Test (ZH), 50 pts (min. 40%)
-    - Takes place in the timeslot of the **14th week** lecture, **8th of December**, 12:15-13:45, QBF13.
+    - Takes place in the timeslot of the **14th week** lecture, **7th of December**, 12:15-13:45, QBF13.
     - [Old sample test PDF](./docs/kotlin_zh_sample.pdf) 
-  - Retake of the test: **15th of December**, 12:15-13:45, QBF15.
+  - Retake of the test: **14th of December**, 12:15-13:45, TBD.
 
 - Homework, 50 pts (min. 40%)
     - [**Assignment details and ideas**](/docs/homework.md)
     - Submissions will be taken on Moodle.
-    - Specification has to be handed in by the **31st of October** (the Friday of week 8), end of day.
+    - Specification has to be handed in by the **30st of October** (the Friday of week 8), end of day.
         - **Note that not handing one in by the deadline results in failing the course, as the homework assignment is a required part.**
-    - Final hand-in of the homework by the **5th of December** (the Friday of week 13), end of day.
-    - _Homework can be handed it with a late fee up until a week late, the 12th of December, until the end of the day._
+    - Final hand-in of the homework by the **4th of December** (the Friday of week 13), end of day.
+    - _Homework can be handed it with a late fee up until a week late, the 11th of December, until the end of the day._
     - Starter projects for getting started, depending on the type of application you choose:
       - Pure Kotlin Gradle project, for command line apps
         - [Configured with JDK 21](/projects/starters/kotlin-gradle-starter-jdk21) (recommended)
@@ -75,12 +75,9 @@ Minimum scores for grades (based on the sum of test and homework scores):
 
 ### 📺 Recordings
 
-Lectures from the current semester:
-
-* [**2025/26/1**](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJmplZ-sKmzcZbAV0BLHG9O3)
-
 Older recordings:
 
+* [2025/26/1](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJmplZ-sKmzcZbAV0BLHG9O3)
 * [2024/25/2](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJlE7hFceuUvcjUSOkeB0fUc)
 * [2024/25/1](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJlqMLIj9mqNowI-bnh1jRY9)
 * [2023/24/2](https://www.youtube.com/playlist?list=PLmQ4JcLQsrJnyDrAWsd8q1g_gdZBYaO_B)
