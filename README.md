@@ -40,7 +40,7 @@ Attendance is strongly encouraged but not mandatory. See also the [written mater
 - Homework, 50 pts (min. 40%)
     - [**Assignment details and ideas**](/docs/homework.md)
     - Submissions will be taken on Moodle.
-    - Specification has to be handed in by the **30st of October** (the Friday of week 8), end of day.
+    - Specification has to be handed in by the **1st of November** (Sunday of week 8), end of day.
         - **Note that not handing one in by the deadline results in failing the course, as the homework assignment is a required part.**
     - Final hand-in of the homework by the **4th of December** (the Friday of week 13), end of day.
     - _Homework can be handed it with a late fee up until a week late, the 11th of December, until the end of the day._
